@@ -219,10 +219,17 @@ namespace HackmudZh
                 return nexact;
             }
 
-            // **在整段文本上做短语匹配**（不再逐行）。
-            // 必须整段做：客户端的硬折行会把一个句子从中间切开，
-            // 跨行的 key 只有整段匹配才可能命中。
-            result = ReplacePhrasesNormalized(text);
+            // **在整段文本上做短语匹配**，跑两遍以覆盖两种折行风格：
+            //   第 1 遍：换行**直接删**（硬折行落在单词中间，如 `mone` / `y.`）
+            //   第 2 遍：换行**当空格**（折行落在空格处，如 `begin a` / `mark`）
+            // 单靠任一种都会漏另一半 —— 实测两者都真实存在，无法预先判定。
+            // 第 2 遍只在第 1 遍之后**仍含英文**时才跑，且中文不会再命中，天然幂等。
+            result = ReplacePhrasesNormalized(text, true);
+            if (HasAsciiLetter(result))
+            {
+                var second = ReplacePhrasesNormalized(result, false);
+                if (second != result) result = second;
+            }
 
             WholeMemo[text] = result;
             return result;
@@ -273,7 +280,7 @@ namespace HackmudZh
         /// 同时记录每个归一化字符对应的**原文区间**；在归一化视图上匹配，
         /// 命中后把原文区间整体替换掉。因此标签与空白的差异都不再影响匹配。
         /// </summary>
-        private static string ReplacePhrasesNormalized(string line)
+        private static string ReplacePhrasesNormalized(string line, bool newlineJoins = true)
         {
             int n = line.Length;
             var norm = new StringBuilder(n);
@@ -305,10 +312,23 @@ namespace HackmudZh
                 }
                 if (c == '\n' || c == '\r')
                 {
-                    // **硬折行**：续行直接接上，不插空格。
-                    // 证据：屏幕上 `...make mone` / `y.` —— 断点落在单词中间，
-                    // 说明客户端是按字符数硬切，不是按单词折行。
-                    i++;
+                    // 换行有**两种**折行风格，单靠一种归一化会漏掉另一半：
+                    //   newlineJoins=true  → 直接删（硬折行断在单词中间：`mone` / `y.`）
+                    //   newlineJoins=false → 当空格（折行落在空格处：`begin a` / `mark`）
+                    // 由 Translate 跑两遍覆盖两者。
+                    //
+                    // ★ 必须把**连续的 \r\n 当成一个换行**：Windows 行尾是两字节，
+                    //   若各加一个空格节点会得到 `begin a  mark`（两个空格），
+                    //   与词典里的单空格永远对不上 —— 实测就是这样漏译的。
+                    int j = i;
+                    while (j < n && (line[j] == '\n' || line[j] == '\r')) j++;
+                    if (!newlineJoins)
+                    {
+                        norm.Append(' ');
+                        mapStart.Add(i);
+                        mapEnd.Add(j);
+                    }
+                    i = j;
                     continue;
                 }
                 norm.Append(c);
@@ -332,7 +352,7 @@ namespace HackmudZh
                         var key = cands[q].Key;
                         if (key.Length == 0 || key.Length > p.Length - k) continue;
                         if (string.CompareOrdinal(p, k, key, 0, key.Length) != 0) continue;
-                        if (!BoundaryOk(p, k, key)) continue;
+                        if (!BoundaryOkOrig(line, mapStart, mapEnd, k, key.Length)) continue;
                         hit = cands[q];     // 同首字符内已按长度降序，首个命中即最长
                         found = true;
                         break;
@@ -450,6 +470,42 @@ namespace HackmudZh
                 }
             }
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// 词边界校验 —— **必须在原文上判**，不能在归一化视图上判。
+        ///
+        /// 原因（一次真实回归）：为处理客户端的**硬折行**，归一化视图会把 `\n` 直接删掉。
+        /// 于是行尾与下一行行首在视图里**粘在一起**：
+        ///     `...to begin a mark`
+        ///     `To view progress see marks.protocol`
+        ///   ⇒ 视图里是 `...to begin a markTo view progress...`
+        /// 此时若拿视图判右边界，`mark` 后面紧跟 `T`（词字符）就会被判成
+        /// 「还在标识符里」而**整条短语被拒绝** —— 屏幕上就一直显示英文。
+        ///
+        /// 所以改用**原文下标**判：原文里紧跟其后的若是 `\n`，那就是天然边界，放行。
+        /// </summary>
+        private static bool BoundaryOkOrig(string orig, List<int> mapStart, List<int> mapEnd,
+                                           int vStart, int vLen)
+        {
+            int s0 = mapStart[vStart];
+            int e0 = mapEnd[vStart + vLen - 1];
+
+            // 左边界：原文前一个字符
+            if (s0 > 0)
+            {
+                char b = orig[s0 - 1];
+                if (b != '\n' && b != '\r' && IsWordChar(b)) return false;
+            }
+            // 右边界：原文后一个字符
+            if (e0 < orig.Length)
+            {
+                char a = orig[e0];
+                if (a == '\n' || a == '\r') return true;   // 换行 = 天然边界
+                if (IsWordChar(a)) return false;
+                if (a == '.' || a == '_') return false;    // 标识符/命令名的一部分
+            }
+            return true;
         }
 
         private static bool IsWordChar(char c)

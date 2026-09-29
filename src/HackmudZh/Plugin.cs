@@ -28,7 +28,7 @@ namespace HackmudZh
     {
         public const string Guid = "hackmud.zh.chs";
         public const string Name = "hackmud 简体中文";
-        public const string Version = "2.0.5";
+        public const string Version = "2.0.6";
 
         internal static ManualLogSource Log;
         internal static ZhPlugin Instance;
