@@ -33,10 +33,24 @@ class Program
 
         // --show 模式：逐行打印「输入 -> 输出」，用于定点验证
         bool show = args.Any(a => a == "--show");
-        if (show)
+        bool whole = args.Any(a => a == "--whole");
+        if (show || whole)
         {
             var src = corpus != null && File.Exists(corpus) ? corpus : null;
-            if (src == null) { Console.WriteLine("--show 需要指定语料文件"); return 2; }
+            if (src == null) { Console.WriteLine("--show/--whole 需要指定语料文件"); return 2; }
+            if (whole)
+            {
+                // 把整个文件当成**一段文本**传给引擎 —— 复现真机行为
+                // （set_text 收到的是整个终端缓冲区，多行）。
+                // 逐行读会漏掉「跨行才匹配得到」的 key，测不出跨折行效果。
+                var all = File.ReadAllText(src, Encoding.UTF8);
+                var tr = Translator.Translate(all);
+                Console.WriteLine("=== 整段输入 ===");
+                Console.WriteLine(all);
+                Console.WriteLine("=== 整段输出 ===");
+                Console.WriteLine(tr);
+                return 0;
+            }
             foreach (var raw in File.ReadAllLines(src, Encoding.UTF8))
             {
                 if (raw.Trim().Length == 0) continue;

@@ -94,35 +94,20 @@ def sentence_fragments(key, val):
     return out
 
 
-def _wrap(s, width):
-    """按空格做词级折行，模拟终端的换行方式。"""
-    words = s.split(" ")
-    lines, cur = [], ""
-    for w in words:
-        if cur == "":
-            cur = w
-        elif len(cur) + 1 + len(w) <= width:
-            cur += " " + w
-        else:
-            lines.append(cur)
-            cur = w
-    if cur:
-        lines.append(cur)
-    return "\n".join(lines)
-
-
 def wrap_variants(key, val):
-    """为超长词条注册**按终端宽度预折行**的变体。
+    """已废弃 —— 保留函数只为兼容旧调用点，恒返回空。
 
-    断点落在句子中间时，句子级拆分也救不了 —— 只有把「折行后的样子」
-    本身作为 key 注册，才能命中屏幕上真实显示的两行文本。
+    为什么不再需要：
+      客户端的硬折行曾逼我生成「预折行变体」，但那会让词典膨胀数倍
+      （每个长条目 × 7 个宽度），而且宽度稍变就失效。
+      正确做法在**引擎侧**：匹配时把换行也**删除**（硬折行是续行直接接上，
+      不插空格），于是未折行的原句 key 天然能跨行命中，与宽度无关。
     """
-    if len(key) <= TERM_WIDTH:
-        return []
-    w = _wrap(key, TERM_WIDTH)
-    if w == key or "\n" not in w:
-        return []
-    return [(w, val)]
+    return []
+
+
+def _hardwrap_unused(s, width):
+    return "\n".join(s[i:i + width] for i in range(0, len(s), width))
 
 
 def fragments(key, val):

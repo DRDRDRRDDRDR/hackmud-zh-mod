@@ -24,8 +24,10 @@ namespace HackmudZh
         private static readonly Dictionary<string, string> Dict =
             new Dictionary<string, string>(StringComparer.Ordinal);
 
-        /// <summary>按长度降序的短语表（最长优先匹配，避免短词吃掉长词）</summary>
+        /// <summary>短语表（按长度降序）+ 首字符索引（避免每个位置都遍历全表）</summary>
         private static List<KeyValuePair<string, string>> _phrases = new List<KeyValuePair<string, string>>();
+        private static readonly Dictionary<char, List<KeyValuePair<string, string>>> _byFirst =
+            new Dictionary<char, List<KeyValuePair<string, string>>>();
 
         /// <summary>行级记忆缓存，避免终端缓冲区反复重算</summary>
         private static readonly Dictionary<string, string> LineMemo =
@@ -123,6 +125,18 @@ namespace HackmudZh
                 _phrases.Add(new KeyValuePair<string, string>(nk, kv.Value));
             }
             _phrases.Sort((a, b) => b.Key.Length.CompareTo(a.Key.Length));
+            _byFirst.Clear();
+            foreach (var kv in _phrases)
+            {
+                if (kv.Key.Length == 0) continue;
+                List<KeyValuePair<string, string>> lst;
+                if (!_byFirst.TryGetValue(kv.Key[0], out lst))
+                {
+                    lst = new List<KeyValuePair<string, string>>();
+                    _byFirst[kv.Key[0]] = lst;
+                }
+                lst.Add(kv);
+            }
             LineMemo.Clear();
             WholeMemo.Clear();
 
@@ -140,7 +154,8 @@ namespace HackmudZh
                 Dict.Count, _phrases.Count, _normWhole.Count));
         }
 
-        /// <summary>空白归一化：连续空白（含 \n \t）压成一个空格，并 trim 两端。</summary>
+        /// <summary>空白归一化：**换行直接删除**（硬折行是续行直接接上，不是插空格），
+        /// 其余连续空白（空格/制表）压成一个空格，并 trim 两端。</summary>
         internal static string Normalize(string s)
         {
             if (string.IsNullOrEmpty(s)) return s;
@@ -149,7 +164,8 @@ namespace HackmudZh
             for (int i = 0; i < s.Length; i++)
             {
                 char c = s[i];
-                if (c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == '\f' || c == '\v')
+                if (c == '\n' || c == '\r') continue;      // 硬折行：直接删掉
+                if (c == ' ' || c == '\t' || c == '\f' || c == '\v')
                 {
                     ws = true;
                     continue;
@@ -195,22 +211,18 @@ namespace HackmudZh
                 return result;
             }
 
-            // 多行：逐行处理
-            if (text.IndexOf('\n') >= 0)
+            // 归一化整串（空白压平、换行删除）
+            string nexact;
+            if (_normWhole.TryGetValue(Normalize(text), out nexact))
             {
-                var lines = text.Split('\n');
-                var sb = new StringBuilder(text.Length + 64);
-                for (int i = 0; i < lines.Length; i++)
-                {
-                    if (i > 0) sb.Append('\n');
-                    sb.Append(TranslateLine(lines[i]));
-                }
-                result = sb.ToString();
+                WholeMemo[text] = nexact;
+                return nexact;
             }
-            else
-            {
-                result = TranslateLine(text);
-            }
+
+            // **在整段文本上做短语匹配**（不再逐行）。
+            // 必须整段做：客户端的硬折行会把一个句子从中间切开，
+            // 跨行的 key 只有整段匹配才可能命中。
+            result = ReplacePhrasesNormalized(text);
 
             WholeMemo[text] = result;
             return result;
@@ -281,14 +293,22 @@ namespace HackmudZh
                         continue;
                     }
                 }
-                if (c == ' ' || c == '\t' || c == '\n' || c == '\r')
+                if (c == ' ' || c == '\t')
                 {
                     int j = i;
-                    while (j < n && (line[j] == ' ' || line[j] == '\t' || line[j] == '\n' || line[j] == '\r')) j++;
+                    while (j < n && (line[j] == ' ' || line[j] == '\t')) j++;
                     norm.Append(' ');
                     mapStart.Add(i);
                     mapEnd.Add(j);
                     i = j;
+                    continue;
+                }
+                if (c == '\n' || c == '\r')
+                {
+                    // **硬折行**：续行直接接上，不插空格。
+                    // 证据：屏幕上 `...make mone` / `y.` —— 断点落在单词中间，
+                    // 说明客户端是按字符数硬切，不是按单词折行。
+                    i++;
                     continue;
                 }
                 norm.Append(c);
@@ -302,19 +322,23 @@ namespace HackmudZh
             int src = 0, k = 0;
             while (k < p.Length)
             {
-                int hitIdx = -1;
-                for (int q = 0; q < _phrases.Count; q++)
+                KeyValuePair<string, string> hit = default(KeyValuePair<string, string>);
+                bool found = false;
+                List<KeyValuePair<string, string>> cands;
+                if (_byFirst.TryGetValue(p[k], out cands))
                 {
-                    var key = _phrases[q].Key;
-                    if (key.Length == 0 || key.Length > p.Length - k) continue;
-                    if (p[k] != key[0]) continue;
-                    if (string.CompareOrdinal(p, k, key, 0, key.Length) != 0) continue;
-                    if (!BoundaryOk(p, k, key)) continue;
-                    hitIdx = q;
-                    break;              // _phrases 已按长度降序
+                    for (int q = 0; q < cands.Count; q++)
+                    {
+                        var key = cands[q].Key;
+                        if (key.Length == 0 || key.Length > p.Length - k) continue;
+                        if (string.CompareOrdinal(p, k, key, 0, key.Length) != 0) continue;
+                        if (!BoundaryOk(p, k, key)) continue;
+                        hit = cands[q];     // 同首字符内已按长度降序，首个命中即最长
+                        found = true;
+                        break;
+                    }
                 }
-
-                if (hitIdx < 0)
+                if (!found)
                 {
                     // 未命中：把原文这一段（含其中的标签/空白）原样输出
                     int s0 = mapStart[k], e0 = mapEnd[k];
@@ -325,11 +349,50 @@ namespace HackmudZh
                 }
                 else
                 {
-                    int keyLen = _phrases[hitIdx].Key.Length;
+                    int keyLen = hit.Key.Length;
                     int s0 = mapStart[k];
                     int e0 = mapEnd[k + keyLen - 1];
+
+                    // 被替换区间可能**切穿标签对**：区间里只有开标签、闭标签在区间外
+                    // （例：key 覆盖到 `<color=…>mark`，`</color>` 紧跟其后）。
+                    // 直接把区间换成译文会让标签失衡 —— 实测会把后续文本染色错乱。
+                    //
+                    // 做法：精确识别**真标签**（不能用 `line[t+1]=='/'` 粗判，
+                    // 否则 `<mark_name>` 这种占位符的尖括号会被误当成开标签），
+                    // 然后把差额标签**重新补发**到译文前面，既保配平也保住原配色。
+                    int opens = 0, closes = 0;
+                    var openTags = new List<string>();
+                    int t = s0;
+                    while (t < e0)
+                    {
+                        if (line[t] == '<')
+                        {
+                            int close = line.IndexOf('>', t);
+                            if (close > t && close - t <= 42 && IsRichTag(line, t, close))
+                            {
+                                if (line[t + 1] == '/') closes++;
+                                else { opens++; openTags.Add(line.Substring(t, close - t + 1)); }
+                                t = close + 1;
+                                continue;
+                            }
+                        }
+                        t++;
+                    }
+
+                    int surplus = opens - closes;
+                    if (surplus > 0)
+                    {
+                        // 把区间内被丢掉的开标签补回来（取其前 surplus 个）
+                        for (int x = 0; x < surplus && x < openTags.Count; x++) sb.Append(openTags[x]);
+                    }
+                    else if (surplus < 0)
+                    {
+                        // 区间内多出闭标签（其开标签在区间之前）：补回等量闭标签以保配平
+                        for (int x = 0; x < -surplus; x++) sb.Append("</color>");
+                    }
+
                     if (s0 > src) sb.Append(line, src, s0 - src);
-                    sb.Append(_phrases[hitIdx].Value);
+                    sb.Append(hit.Value);
                     src = e0;
                     k += keyLen;
                 }

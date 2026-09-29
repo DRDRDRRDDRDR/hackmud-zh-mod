@@ -18,3 +18,9 @@ _commit_msg.txt
 _cm.txt
 dict/show.txt
 dict/test_lines.txt
+
+dict/test_*.txt
+dict/corpus_whole.txt
+dict/whole_out.txt
+dict/show*.txt
+dict/test_tl.txt
