@@ -12,3 +12,5 @@ dict/*_report.txt
 dict/corpus_en.txt
 dict/corpus_stat.txt
 *.user
+
+_commit_msg.txt
