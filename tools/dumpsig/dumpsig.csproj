@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>dumpsig</AssemblyName>
+    <Nullable>disable</Nullable>
+    <RootNamespace>dumpsig</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Cecil">
+      <HintPath>C:\Users\DR\Downloads\DSH\hackmud-zh-mod\_vendor\BepInEx_win_x64_5.4.23.5\BepInEx\core\Mono.Cecil.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

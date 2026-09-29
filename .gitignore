@@ -1,0 +1,14 @@
+# 构建产物与第三方载体：不入库
+_vendor/
+dist/
+src/**/bin/
+src/**/obj/
+tools/**/bin/
+tools/**/obj/
+dict/gaps.txt
+dict/zhcheck_out.txt
+dict/*_report.txt
+# 原始语料来自本机终端历史（含排行榜玩家名等个人游玩数据），不入库
+dict/corpus_en.txt
+dict/corpus_stat.txt
+*.user

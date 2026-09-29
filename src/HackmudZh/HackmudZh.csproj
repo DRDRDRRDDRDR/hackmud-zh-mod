@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <AssemblyName>HackmudZh</AssemblyName>
+    <RootNamespace>HackmudZh</RootNamespace>
+    <Version>2.0.0</Version>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <DebugType>none</DebugType>
+    <NoWarn>CS0169;CS0649;CS0414</NoWarn>
+    <!-- 游戏程序集只作引用，绝不随包分发 -->
+    <ProduceReferenceAssembly>false</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <!-- 路径：游戏 Managed 目录 / BepInEx core -->
+  <PropertyGroup>
+    <GameManaged>C:\Program Files (x86)\Steam\steamapps\common\hackmud\hackmud_win_Data\Managed</GameManaged>
+    <BepCore>C:\Users\DR\Downloads\DSH\hackmud-zh-mod\_vendor\BepInEx_win_x64_5.4.23.5\BepInEx\core</BepCore>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BepInEx 5 稳定线 -->
+    <Reference Include="BepInEx">
+      <HintPath>$(BepCore)\BepInEx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>$(BepCore)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Unity 运行时（只引用，不分发） -->
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameManaged)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameManaged)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>$(GameManaged)\UnityEngine.UI.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>$(GameManaged)\UnityEngine.TextRenderingModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>$(GameManaged)\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>$(GameManaged)\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>$(GameManaged)\UnityEngine.ImageConversionModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>$(GameManaged)\Unity.TextMeshPro.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <!-- 词典作为嵌入资源打进 DLL，同时允许外部 JSON 覆盖（热更新） -->
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\dict\zh.json" LogicalName="HackmudZh.zh.json" />
+  </ItemGroup>
+
+</Project>

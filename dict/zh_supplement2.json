@@ -1,0 +1,54 @@
+{
+  "Steam Auth Failure. Steam might be down. Make sure steam & your OS are 100% up-to-date (might need a restart). VAC banned accounts will also get this message. Contact support@hackmud.com if you can't get it working.":
+    "Steam 认证失败。Steam 可能宕机了。请确认 Steam 与你的系统都已完全更新（可能需要重启）。被 VAC 封禁的账号也会看到这条消息。如果始终无法进入，请联系 support@hackmud.com。",
+
+  "The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.":
+    "第二重要的事——仅次于赚钱——就是花钱。因为想赚钱，就得先花钱。",
+  "You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!":
+    "等你靠自己的鞋带把自己拽起来、开始埋头苦干的时候，这一切你都会有的！",
+  "Savor the little nugget of freedom I've given you. Because I'm just that nice.":
+    "好好品味我给你的这一小块自由吧。谁让我就是这么好心呢。",
+  "Because I'm - again - such a nice fella, I'm gonna give you some GC.":
+    "因为——再一次——我是个大好人，我打算给你一些 GC。",
+  "You'll be sending her a lot more of it later down the line.":
+    "以后你还会给她送更多。",
+  "You can send GC to others using accts.xfer_gc_to; punch in a user to send money to, and an amount.":
+    "你可以用 accts.xfer_gc_to 给别人转 GC；填上收款用户和一个金额即可。",
+  "When you want to admire how much wealth you've accumulated, hit up accts.balance":
+    "想欣赏一下自己攒了多少财富时，就用 accts.balance",
+  "Try it out by sending some money to trust. She's got lot of GC already.":
+    "试试看，给 trust 转点钱。她手上的 GC 已经不少了。",
+  "Top level marks are available to earn now, run marks.Èmark_nameÉ to begin a mark,":
+    "顶层标记现在都可以获取了，运行 marks.Èmark_nameÉ 即可开始一个标记，",
+  "Top level marks are available to earn now, run marks.<mark_name> to begin a mark.":
+    "顶层标记现在都可以获取了，运行 marks.<mark_name> 即可开始一个标记。",
+  "To view progress see marks.protocol": "查看进度请用 marks.protocol",
+  "view further training with marks.available": "用 marks.available 查看更多训练内容",
+  "view completed mark with marks.protocol": "用 marks.protocol 查看已完成的标记",
+  "mark ::!money_manager:: has been hidden": "标记 ::!money_manager:: 已被隐藏",
+  "mark ::!electronic_transfer:: has been hidden": "标记 ::!electronic_transfer:: 已被隐藏",
+  "// Welcome back to hackmud!": "// 欢迎回到 hackmud！",
+  "// Wow! You've been playing hackmud for about 2 months!": "// 哇！你已经玩 hackmud 大约 2 个月了！",
+  "// about 2 months old": "// 大约 2 个月",
+  "1st-login:": "首次登录：",
+  "last-login:": "上次登录：",
+  "last_login:": "上次登录：",
+  "joined:": "加入：",
+  "oldest_user:": "最早用户：",
+  "highest-tier:": "最高层级：",
+  "highest_tier:": "最高层级：",
+  "joined-corp:": "已加入公司：",
+  "joined_corp:": "已加入公司：",
+  "is-supporter:": "是支持者：",
+  "is_supporter:": "是支持者：",
+  "Active user switched to ": "活动用户已切换至 ",
+  "donations from players": "来自玩家的捐赠",
+  "for more information": "了解更多信息",
+  "Run marks.available to access further teaching from Trust": "运行 marks.available 以获取 Trust 的后续教学",
+  "Top Donors": "捐赠榜",
+  "WHAT'S NEW": "最新动态",
+  "Special shell commands:": "特殊外壳命令：",
+  "Common scripts:": "常用脚本：",
+  "To run a script, type the name of the script and press enter.": "要运行脚本，请输入脚本名称并按回车。",
+  "usermail": "用户邮件"
+}

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>zhcheck</AssemblyName>
+    <RootNamespace>zhcheck</RootNamespace>
+    <Nullable>disable</Nullable>
+    <LangVersion>latest</LangVersion>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- 直接复用模组的翻译引擎源码，保证「测的就是跑的那份」 -->
+    <Compile Include="..\..\src\HackmudZh\Translator.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Stub.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BepInEx">
+      <HintPath>..\..\_vendor\BepInEx_win_x64_5.4.23.5\BepInEx\core\BepInEx.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
