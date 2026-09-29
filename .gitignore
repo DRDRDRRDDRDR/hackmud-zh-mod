@@ -14,3 +14,7 @@ dict/corpus_stat.txt
 *.user
 
 _commit_msg.txt
+
+_cm.txt
+dict/show.txt
+dict/test_lines.txt
