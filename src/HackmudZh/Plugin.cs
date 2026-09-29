@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -28,7 +28,7 @@ namespace HackmudZh
     {
         public const string Guid = "hackmud.zh.chs";
         public const string Name = "hackmud 简体中文";
-        public const string Version = "2.0.7";
+        public const string Version = "2.0.8";
 
         internal static ManualLogSource Log;
         internal static ZhPlugin Instance;

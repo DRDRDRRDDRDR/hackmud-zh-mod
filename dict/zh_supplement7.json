@@ -1,0 +1,23 @@
+{
+  "_note": "第 7 批：全量语料（含补丁前英文历史备份，769 行去重）triage 的剩余真漏译。",
+
+  "::: earned": "::: 已获得",
+  ":::earned": ":::已获得",
+  " earned": " 已获得",
+
+  "Mark :::init::: earned": "标记 :::init::: 已获得",
+  "Mark :::input::: earned": "标记 :::input::: 已获得",
+  "Mark :::kiddie_pool::: earned": "标记 :::kiddie_pool::: 已获得",
+  "Mark :::stimulus::: earned": "标记 :::stimulus::: 已获得",
+  "Mark :::compliance::: earned": "标记 :::compliance::: 已获得",
+  "Mark :::pattern::: earned": "标记 :::pattern::: 已获得",
+  "Mark :::verify::: earned": "标记 :::verify::: 已获得",
+  "Mark :::security_levels::: earned": "标记 :::security_levels::: 已获得",
+  "Mark :::gc::: earned": "标记 :::gc::: 已获得",
+  "Mark :::accts::: earned": "标记 :::accts::: 已获得",
+  "Mark :::electronic_transfer::: earned": "标记 :::electronic_transfer::: 已获得",
+  "Mark :::money_manager::: earned": "标记 :::money_manager::: 已获得",
+  "Mark :::complex_input::: earned": "标记 :::complex_input::: 已获得",
+  "Mark :::deep_diver::: earned": "标记 :::deep_diver::: 已获得",
+  "Mark :::running_in_the_pool::: earned": "标记 :::running_in_the_pool::: 已获得"
+}

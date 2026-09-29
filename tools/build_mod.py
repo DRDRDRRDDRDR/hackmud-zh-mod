@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """build_mod.py — 组装 hackmud 简体中文模组发布包。
 
 产物结构（全部是**新增文件**，不覆盖任何游戏既有文件）：
@@ -28,7 +28,7 @@ BEP = os.path.join(VENDOR, "BepInEx_win_x64_5.4.23.5")
 SRC_DLL = os.path.join(ROOT, "src", "HackmudZh", "bin", "Release", "HackmudZh.dll")
 DICT = os.path.join(ROOT, "dict", "zh.json")
 OUT = os.path.join(ROOT, "dist", "hackmud-zh-mod")
-VER = "2.0.7"
+VER = "2.0.8"
 
 # 绝不能出现在包里的游戏程序集
 GAME_ASSEMBLIES = ["Core.dll", "UnityEngine.dll", "UnityEngine.CoreModule.dll",

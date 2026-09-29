@@ -23,7 +23,8 @@ SUPS = [os.path.join(ROOT, "zh_supplement.json"),
         os.path.join(ROOT, "zh_supplement3.json"),
         os.path.join(ROOT, "zh_supplement4.json"),
         os.path.join(ROOT, "zh_supplement5.json"),
-        os.path.join(ROOT, "zh_supplement6.json")]
+        os.path.join(ROOT, "zh_supplement6.json"),
+        os.path.join(ROOT, "zh_supplement7.json")]
 REPORT = os.path.join(ROOT, "merge_report.txt")
 
 PH = re.compile(r"\{[0-9]\}")
