@@ -19,7 +19,8 @@ sys.stdout.reconfigure(encoding="utf-8", errors="replace")
 ROOT = r"C:\Users\DR\Downloads\DSH\hackmud-zh-mod\dict"
 MAIN = os.path.join(ROOT, "zh.json")
 SUPS = [os.path.join(ROOT, "zh_supplement.json"),
-        os.path.join(ROOT, "zh_supplement2.json")]
+        os.path.join(ROOT, "zh_supplement2.json"),
+        os.path.join(ROOT, "zh_supplement3.json")]
 REPORT = os.path.join(ROOT, "merge_report.txt")
 
 PH = re.compile(r"\{[0-9]\}")

@@ -12,7 +12,8 @@
 import os, sys, json, hashlib, subprocess, shutil, tempfile
 
 GAME = r"C:\Program Files (x86)\Steam\steamapps\common\hackmud"
-DIST = r"C:\Users\DR\Downloads\DSH\hackmud-zh-mod\dist\hackmud-zh-mod"
+DIST = sys.argv[1] if len(sys.argv) > 1 else \
+    r"C:\Users\DR\Downloads\DSH\hackmud-zh-mod\dist\hackmud-zh-mod"
 DATA = os.path.join(GAME, "hackmud_win_Data")
 
 MOD_PATHS = ["winhttp.dll", ".doorstop_version", "doorstop_config.ini", "BepInEx"]

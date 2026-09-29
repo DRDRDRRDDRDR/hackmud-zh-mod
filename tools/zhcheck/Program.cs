@@ -79,26 +79,28 @@ class Program
 
         // 把仍含英文的整行也写出来，便于直接补词条
         var outFile = Path.Combine(Path.GetDirectoryName(dict), "gaps.txt");
+        var gapLines = new List<Tuple<int, string>>();
+        foreach (var raw in lines)
+        {
+            var tr = Translator.Translate(raw);
+            var plain = TagRe.Replace(tr, " ");
+            plain = EscRe.Replace(plain, " ");
+            int n = WordRe.Matches(plain).Count;
+            if (n > 0) gapLines.Add(Tuple.Create(n, plain.Trim()));
+        }
         using (var w = new StreamWriter(outFile, false, new UTF8Encoding(false)))
         {
-            w.WriteLine("# 仍含英文的行（按英文词数排序）—— 补词条的输入");
-            w.WriteLine("# 生成时间: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+            w.WriteLine("# 仍含英文的渲染行（已去颜色标签，按英文词数降序）");
+            w.WriteLine("# 共 " + gapLines.Count + " 行 ｜ 生成 " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+            w.WriteLine("# 用法：把有意义的行译成中文，加进 dict/zh_supplement3.json 后跑 merge_dict.py");
             w.WriteLine();
-            foreach (var l in lines
-                .Select(l => new { raw = l, plain = EscRe.Replace(TagRe.Replace(Translator.Translate(l), " "), " "), tr = Translator.Translate(l) })
-                .Where(x => WordRe.IsMatch(x.plain))
-                .OrderByDescending(x => WordRe.Matches(x.plain).Count)
-                .Take(400))
+            foreach (var t in gapLines.OrderByDescending(x => x.Item1))
             {
-                w.WriteLine("原文: " + l);
-                w.WriteLine("译文: " + l_tr(l.tr, l.raw));
-                w.WriteLine();
+                w.WriteLine(t.Item2);
             }
         }
         Console.WriteLine();
-        Console.WriteLine("缺口清单 -> " + outFile);
+        Console.WriteLine("缺口清单 -> " + outFile + "  (" + gapLines.Count + " 行)");
         return 0;
     }
-
-    static string l_tr(string translated, string raw) { return translated == raw ? "(未翻译)" : translated; }
 }
