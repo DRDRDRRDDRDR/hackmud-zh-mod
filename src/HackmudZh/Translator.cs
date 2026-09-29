@@ -46,8 +46,18 @@ namespace HackmudZh
         {
             ParseJson(File.ReadAllText(jsonPath, Encoding.UTF8));
             Source = jsonPath;
+            // 同目录下的 wordmap.json（安全裸词表）也一并载入
+            try
+            {
+                var wm = Path.Combine(Path.GetDirectoryName(jsonPath) ?? ".", "wordmap.json");
+                if (File.Exists(wm)) ParseJson(File.ReadAllText(wm, Encoding.UTF8), true);
+            }
+            catch { }
             Rebuild();
         }
+
+        /// <summary>「安全裸词」集合：这些词**允许**参与子串替换（普通裸词只做整串匹配）。</summary>
+        private static readonly HashSet<string> SafeWords = new HashSet<string>(StringComparer.Ordinal);
 
         internal static void Load(string pluginPath)
         {
@@ -60,6 +70,9 @@ namespace HackmudZh
                 {
                     ParseJson(File.ReadAllText(ext, Encoding.UTF8));
                     Source = ext;
+                    // 安全裸词表（面板标题等），允许参与子串替换
+                    var wm = Path.Combine(dir, "wordmap.json");
+                    if (File.Exists(wm)) ParseJson(File.ReadAllText(wm, Encoding.UTF8), true);
                     Rebuild();
                     return;
                 }
@@ -103,9 +116,10 @@ namespace HackmudZh
             var seen = new HashSet<string>(StringComparer.Ordinal);
             foreach (var kv in Dict)
             {
-                if (!IsPhraseSafe(kv.Key)) continue;
+                bool bare = !IsPhraseSafe(kv.Key);
+                if (bare && !SafeWords.Contains(kv.Key)) continue;   // 普通裸词只做整串匹配
                 var nk = Normalize(kv.Key);
-                if (nk.Length < 3 || !seen.Add(nk)) continue;
+                if (nk.Length < 2 || !seen.Add(nk)) continue;
                 _phrases.Add(new KeyValuePair<string, string>(nk, kv.Value));
             }
             _phrases.Sort((a, b) => b.Key.Length.CompareTo(a.Key.Length));
@@ -380,7 +394,9 @@ namespace HackmudZh
             return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9');
         }
 
-        /// <summary>短语首尾是词字符时，要求原文外侧不是词字符。</summary>
+        /// <summary>短语首尾是词字符时，要求原文外侧不是词字符；
+        /// 另外**禁止匹配进标识符内部**（右侧紧跟 `.` 或 `_` 视为命令名/脚本名的一部分，
+        /// 例如不能让 `binmat` 命中 `binmat.log` —— 那是玩家要照着敲的命令）。</summary>
         private static bool BoundaryOk(string line, int start, string k)
         {
             if (IsWordChar(k[0]))
@@ -391,7 +407,12 @@ namespace HackmudZh
             if (IsWordChar(last))
             {
                 int after = start + k.Length;
-                if (after < line.Length && IsWordChar(line[after])) return false;
+                if (after < line.Length)
+                {
+                    char c = line[after];
+                    if (IsWordChar(c)) return false;
+                    if (c == '.' || c == '_') return false;   // 标识符/命令名的一部分
+                }
             }
             return true;
         }
@@ -408,7 +429,7 @@ namespace HackmudZh
 
         // ---------------- 极简 JSON 解析（扁平 { "k": "v" }，无需第三方依赖） ----------------
 
-        private static void ParseJson(string json)
+        private static void ParseJson(string json, bool safeWords = false)
         {
             int i = 0, n = json.Length;
             SkipWs(json, ref i);
@@ -427,7 +448,11 @@ namespace HackmudZh
                 SkipWs(json, ref i);
                 if (i >= n || json[i] != '"') continue;
                 string val = ReadString(json, ref i);
-                if (key.Length > 0 && val.Length > 0) Dict[key] = val;
+                if (key.Length > 0 && val.Length > 0)
+                {
+                    Dict[key] = val;
+                    if (safeWords) SafeWords.Add(key);
+                }
             }
         }
 

@@ -1,0 +1,8 @@
+﻿<color=#101215FF>scratch</color>
+<color=#101215FF>chat</color>
+<color=#101215FF>binlog</color>
+<color=#101215FF>binmat</color>
+binmat.log
+binmat.state
+use binmat.log to see upgrades
+scratch.txt

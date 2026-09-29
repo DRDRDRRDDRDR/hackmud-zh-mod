@@ -21,7 +21,8 @@ MAIN = os.path.join(ROOT, "zh.json")
 SUPS = [os.path.join(ROOT, "zh_supplement.json"),
         os.path.join(ROOT, "zh_supplement2.json"),
         os.path.join(ROOT, "zh_supplement3.json"),
-        os.path.join(ROOT, "zh_supplement4.json")]
+        os.path.join(ROOT, "zh_supplement4.json"),
+        os.path.join(ROOT, "zh_supplement5.json")]
 REPORT = os.path.join(ROOT, "merge_report.txt")
 
 PH = re.compile(r"\{[0-9]\}")
@@ -66,7 +67,13 @@ def plain_fragments(key, val):
 
 # 终端宽度（来自游戏自身的 -TERMINAL WIDTH: 108-）
 TERM_WIDTH = 108
-SENT_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+# 句子边界：英文按 "句末标点 + 空白" 拆，中文按 "句末标点" 拆。
+# 必须分开：中文译文用 。！？ 且后面**不带空格**，用同一个正则去拆英文 key 与中文 value
+# 会得到不同的段数，于是整条被跳过（这就是 "The second most important thing…" 一直
+# 只有整句 key、没有单句 key 的原因）。
+SENT_EN = re.compile(r"(?<=[.!?])\s+")
+SENT_ZH = re.compile(r"(?<=[。！？；])")
 
 
 def sentence_fragments(key, val):
@@ -74,16 +81,14 @@ def sentence_fragments(key, val):
 
     终端会按宽度折行（Core.dll 的 AddOutput 里调 MEGNKIOGEBH(line, char_width)），
     所以超长整句在屏幕上是被断成两行的，整句 key 永远匹配不到。
-    拆成句子后，只要断点落在句末就能命中。
+    拆成句子后，只要断点落在句末就能命中 —— 而客户端的折行**恰恰优先落在句末**。
     """
-    ks = SENT_SPLIT.split(key)
-    vs = SENT_SPLIT.split(val)
+    ks = [x.strip() for x in SENT_EN.split(key) if x.strip()]
+    vs = [x.strip() for x in SENT_ZH.split(val) if x.strip()]
     if len(ks) != len(vs) or len(ks) < 2:
         return []
     out = []
     for a, b in zip(ks, vs):
-        a = a.strip()
-        b = b.strip()
         if len(a) >= 12 and a != b:
             out.append((a, b))
     return out

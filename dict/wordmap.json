@@ -1,0 +1,16 @@
+{
+  "_comment": "安全裸词表：这些词**允许**参与子串替换（普通裸词只做整串匹配）。仅放经过判定「译了不会破坏功能」的单词。",
+
+  "scratch": "草稿",
+  "chat": "聊天",
+  "binlog": "日志",
+  "binmat": "配件",
+
+  "usermail": "用户邮件",
+  "autocomplete": "自动补全",
+
+  "Loading": "加载中",
+  "Connecting": "连接中",
+  "Confirm": "确认",
+  "Cancel": "取消"
+}

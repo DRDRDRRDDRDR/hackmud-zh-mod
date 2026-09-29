@@ -28,7 +28,7 @@ namespace HackmudZh
     {
         public const string Guid = "hackmud.zh.chs";
         public const string Name = "hackmud 简体中文";
-        public const string Version = "2.0.2";
+        public const string Version = "2.0.3";
 
         internal static ManualLogSource Log;
         internal static ZhPlugin Instance;
@@ -43,6 +43,7 @@ namespace HackmudZh
                 Translator.Load(this.Info.Location);
                 FontFix.Install();
                 Patcher.Apply();
+                Sweeper.Begin();
                 Log.LogInfo(string.Format("hackmud 汉化已加载：词典 {0} 条，字体 {1}",
                     Translator.Count, FontFix.Status));
             }

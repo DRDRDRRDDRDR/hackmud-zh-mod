@@ -1,0 +1,17 @@
+{
+  "Top level marks are available to earn now, run marks.<mark_name> to begin a mark":
+    "顶层标记现在都可以获取了，运行 marks.<mark_name> 即可开始一个标记",
+  "name: \"<mark_name>\" - Search for mark by name":
+    "name: \"<mark_name>\" - 按名称搜索标记",
+  "name: \"<script_name>\" - Search for mark by name":
+    "name: \"<script_name>\" - 按名称搜索标记",
+
+  " of those units. ": " 个该单位。",
+  " of those units.": " 个该单位。",
+  "of those units.": "个该单位。",
+
+  "The lifeguard took around 25%. He is a good lifeguard.":
+    "救生员抽走了大约 25%。他是个好救生员。",
+  "The lifeguard took around 25%.": "救生员抽走了大约 25%。",
+  "He is a good lifeguard.": "他是个好救生员。"
+}

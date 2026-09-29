@@ -28,7 +28,7 @@ BEP = os.path.join(VENDOR, "BepInEx_win_x64_5.4.23.5")
 SRC_DLL = os.path.join(ROOT, "src", "HackmudZh", "bin", "Release", "HackmudZh.dll")
 DICT = os.path.join(ROOT, "dict", "zh.json")
 OUT = os.path.join(ROOT, "dist", "hackmud-zh-mod")
-VER = "2.0.2"
+VER = "2.0.3"
 
 # 绝不能出现在包里的游戏程序集
 GAME_ASSEMBLIES = ["Core.dll", "UnityEngine.dll", "UnityEngine.CoreModule.dll",
@@ -85,6 +85,12 @@ def main():
     os.makedirs(plug)
     shutil.copy2(SRC_DLL, os.path.join(plug, "HackmudZh.dll"))
     shutil.copy2(DICT, os.path.join(plug, "zh.json"))
+    # 安全裸词表（面板标题等允许参与子串替换的单词）——手写维护，不由 merge_dict 生成
+    wm = os.path.join(ROOT, "dict", "wordmap.json")
+    if os.path.exists(wm):
+        shutil.copy2(wm, os.path.join(plug, "wordmap.json"))
+    else:
+        problems.append("缺少 wordmap.json")
 
     # ---- 脚本 ----
     for s in ("install.ps1", "uninstall.ps1", "verify.ps1", "README.md", "NOTICE.md"):

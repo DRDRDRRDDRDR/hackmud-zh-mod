@@ -1,0 +1,653 @@
+# A 完全未覆盖 —— 需要新增词条
+# 来源：遍历 Core.dll 的整个 #US 堆 + Unity 资产的串
+# 生成 2026-09-29 16:34:13
+
+==========================================================================================
+## 来自 Core.dll（客户端代码）: 68 条
+==========================================================================================
+((?:(?:"(?:[^"\\\n]|\\.)+")|(?:[a-zA-Z_][\w]*))[\t ]{0,2}):([\t ]{0,2}(?:(?:true)|(?:false)|(?:null)|(?:"(?:[^"\\\n]|\\.)*")|(?:\-?\d+\.?\d*)|\{|\[|#s\.[a-z_][a-z0-9_]*\.[a-z_][a-z0-9_]*))
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZ[+]++@!"#$%&'()*+,-./0123456789:;È=É?+++++++++++++++++++◢◣+++++++++¡++++◥◤+++++++++++++++++++++++++++abcdefghijklmnopqrstuvwxyz++++++
+
+║ `1trade {0}` ║
+╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╢
+{2,-38} ║ {7}
+{3,-38} ║ {8}
+{1, -35} ║ {1}
+{4, -47} ║ {9}
+{5,-35} ║ {10}
+{6,-38} ║ {11}
+
+{12}{13}{14}
+
+(#s\.|[^#\.a-z0-9_]|^)(accts|autos|scripts|users|sys|corps|chats|gui|escrow|market|kernel|binmat|kiddie_pool|bbs)\.([a-z_][a-z0-9_]*)
+
+(\W)([-])?(?:([\d]{1,5})Q)?(?:([\d]{1,3})T)?(?:([\d]{1,3})B)?(?:([\d]{1,3})M)?(?:([\d]{1,3})K)?(?:([\d]{1,3}))?GC([\W])
+
+^([-])?(?:([\d]{1,5})Q)?(?:([\d]{1,3})T)?(?:([\d]{1,3})B)?(?:([\d]{1,3})M)?(?:([\d]{1,3})K)?(?:([\d]{1,3}))?GC([\W])*
+
+║ `1trade {0}` ║
+╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜
+{2}
+{3}
+{1}
+{4}
+{5}
+{6}
+
+{7}
+{8}
+{1}
+{9}
+{10}
+{11}
+
+{12}{13}{14}
+
+(FORM|CHAOS|KIN|CHOICE|DATA|VOID)_(?:ALPHA|BETA|GAMMA|DELTA|EPSILON|ZETA|THETA|LAMBDA|SIGMA|TAU|PHI|PSI|OMEGA)_[0-9]
+
+((?:(?:"(?:[^"\\\n]|\\.)+")|(?:[a-zA-Z_][\w]*))[\t ]{0,2}):([\t ]{0,2}(?:(?:È[^\nÉ]+É)|(?:"È(?:[^"É\\\n]|\\.)*É")))
+
+^([-])?(?:([\d]{1,5})Q)?(?:([\d]{1,3})T)?(?:([\d]{1,3})B)?(?:([\d]{1,3})M)?(?:([\d]{1,3})K)?(?:([\d]{1,3}))?GC$
+
+function(context, args)
+{
+	var caller = context.caller;
+	var l = #fs.scripts.lib();
+	return { ok:false };
+}
+
+After parsing a value an unexpected character was encountered: ". Line 1, position (\d+).
+
+<color={0}>$1</color><color={1}>AD</color> <color={2}>D</color><color={3}>$2</color>
+
+[\u00A0\u180E\u2004\u2005\u2006\u2008\u2009\u200A\u200B\u202F\u205F\uFEFF]
+
+(#s\.|[^#\.a-z0-9_]|^)(marks)\.(available|protocol|sync|clone)
+
+T[RA]U[S5]T[^\n]+?C[O0][MN][MN]?U[MN][I1l]C[RA]T[1Il][O0][MN]
+
+Can not add property ([^"]+) to Newtonsoft.Json.Linq.JObject
+
+<color={0}>retire_user</color> $1 <color={2}>$2</color>
+
+{{ items_a = {0}, items_b = {1}, a = {2}, b = {3} }}
+
+(#s\.|[^#\.a-z0-9_]|^)(marks)\.([a-z_][a-z0-9_]*)
+
+(#s\.|[^#\.a-z0-9_]|^)(trust)\.([a-z_][a-z0-9_]*)
+
+(#s\.|[^#\.a-z0-9_]|^)(risk)\.([a-z_][a-z0-9_]*)
+
+^(?:retire_user)\s([a-z_][a-z0-9_]*)\s(confirm)
+
+$1<color={0}>$2</color>.<color={1}>$3</color>
+
+<color={0}>$1</color>:<color={1}>$2</color>
+
+{{trade_user:"{0}",is_corp_trade:true}}
+
+(?:<color=#([A-Z0-9]{8})>)|(?:</color>)
+
+^\w{0,5}[QTBMK]|^.*?[QTBMK].*?[QTBMK]
+
+{{mod_type:"accept", accept:{0}}}
+
+{mod_type:"accept", accept:false}
+
+chats.join
+chats.tell
+chats.send
+
+^/([A-za-z0-9_-]+)\s*=\s*(.*)\s*
+
+(?:SPC|VNP|K|HJG|NGC)_[0-9]{4}
+
+{{mod_type:"fee", fee:"{0}"}}
+
+chats.{1} {{{2}", msg:"{0}"}}
+
+{{mod_type:"bits", bits:{0}}}
+
+{{mod_type:"details", i:{0}}}
+
+{{mod_type:"rem", i:{0}}}
+
+{{mod_type:"add", i:{0}}}
+
+{{mod_type:"gc", gc:{0}}}
+
+{3} {{{2}", msg:"{0}"}}
+
+<color={0}>{1}</color>
+
+<color={1}>{0}</color>
+
+(\d{1,4})AD D(\d{1,3})
+
+binmat.x {{op:"{0}"}}
+
+Hidden/Custom/Overlay
+
+<color={0}>$0</color>
+
+<color={0}>$1</color>
+
+</color>
+<color={0}>
+
+{{trade_user:"{0}"}}
+
+bits_v\d \(\+(\d+)⌽
+
+{"activate": true }
+
+^/([A-za-z0-9_-]+)
+
+{mod_type:"end"}
+
+`c┗ AS` `{0}{1}`
+
+application/json
+
+{0} `ctrade_gc`
+
+{"__scriptor":"
+
+Token token="
+
+{"dc":"true"}
+
+<color=#{0}>
+
+Content-Type
+
+<color={0}>
+
+[DEADNODE]
+
+{"input":
+
+<tab>
+
+*.js
+
+to:"
+
+
+==========================================================================================
+## 来自 Unity 资产: 173 条
+==========================================================================================
+<color=#FFFFFFFF>◢◤◥◣</color>
+<color=#FFFFFFFF>¡  ¡</color>
+<color=#FFFFFFFF>¡  ¡</color>
+<color=#FFFFFFFF>◥◣◢◤</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◢¡¡◣</color>
+<color=#FFFFFFFF>  ◢◤</color>
+<color=#FFFFFFFF> ◢◤ </color>
+<color=#FFFFFFFF>◢¡¡¡</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◢¡¡◣</color>
+<color=#FFFFFFFF>  ◢◤</color>
+<color=#FFFFFFFF>  ◥◣</color>
+<color=#FFFFFFFF>◥¡¡◤</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◣  ¡</color>
+<color=#FFFFFFFF>¡  ¡</color>
+<color=#FFFFFFFF>◥¡¡¡</color>
+<color=#FFFFFFFF>   ¡</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◢¡¡◤</color>
+<color=#FFFFFFFF>◥◣  </color>
+<color=#FFFFFFFF>  ◥◣</color>
+<color=#FFFFFFFF>◥¡¡◤</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◢¡¡◣</color>
+<color=#FFFFFFFF>¡◣  </color>
+<color=#FFFFFFFF>¡◤◥◣</color>
+<color=#FFFFFFFF>◥¡¡◤</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◥¡¡◣</color>
+<color=#FFFFFFFF>  ◢◤</color>
+<color=#FFFFFFFF> ◢◤ </color>
+<color=#FFFFFFFF> ◤  </color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◢◤◥◣</color>
+<color=#FFFFFFFF>◥◣◢◤</color>
+<color=#FFFFFFFF>◢◤◥◣</color>
+<color=#FFFFFFFF>◥◣◢◤</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>◢◤◥◣</color>
+<color=#FFFFFFFF>◥◣◢¡</color>
+<color=#FFFFFFFF>   ¡</color>
+<color=#FFFFFFFF>  ◢◤</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>    </color>
+<color=#FFFFFFFF>    </color>
+<color=#FFFFFFFF> ◢◣ </color>
+<color=#FFFFFFFF> ◥◤ </color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF> </color><color=#7F7F7FFF>ÉÉÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>  </color><color=#7F7F7FFF>ÉÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>   </color><color=#7F7F7FFF>ÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>    </color><color=#7F7F7FFF>É</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#7F7F7FFF>É</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É    </color>
+<color=#FFFFFFFF></color>
+
+<color=#7F7F7FFF>ÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É   </color>
+<color=#FFFFFFFF></color>
+
+<color=#7F7F7FFF>ÉÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É  </color>
+<color=#FFFFFFFF></color>
+
+<color=#7F7F7FFF>ÉÉÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É </color>
+<color=#FFFFFFFF></color>
+
+<color=#7F7F7FFF>ÉÉÉÉÉ</color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>     </color><color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>      </color><color=#B2B2B2FF>ÉÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#FFFFFFFF>       </color><color=#B2B2B2FF>ÉÉ</color><color=#FFFFFFFF>É</color>
+<color=#FFFFFFFF></color>
+
+<color=#B2B2B2FF>ÉÉ</color><color=#FFFFFFFF>]       </color>
+<color=#FFFFFFFF></color>
+
+<color=#B2B2B2FF>ÉÉÉ</color><color=#FFFFFFFF>]      </color>
+<color=#FFFFFFFF></color>
+
+<color=#B2B2B2FF>ÉÉÉÉ</color><color=#FFFFFFFF>É     </color>
+<color=#FFFFFFFF></color>
+
+Hidden/PostProcessing/ScreenSpaceReflections
+
+Hidden/PostProcessing/CopyStdFromDoubleWide
+
+TextMeshPro/Mobile/Distance Field (Surface)
+
+TextMeshPro/Mobile/Distance Field - Masking
+
+Hidden/PostProcessing/CopyStdFromTexArray
+
+TextMeshPro/Mobile/Distance Field Overlay
+
+Hidden/PostProcessing/Debug/LightMeter
+
+TextMeshPro/Distance Field (Surface)
+
+Hidden/PostProcessing/Texture2DLerp
+
+Hidden/PostProcessing/DepthOfField
+
+Hidden/PostProcessing/DiscardAlpha
+
+Hidden/PostProcessing/MultiScaleVO
+
+TextMeshPro/Distance Field Overlay
+
+TextMeshPro/Mobile/Distance Field
+
+LineBreaking Following Characters
+
+Hidden/PostProcessing/GrainBaker
+
+Hidden/PostProcessing/Lut2DBaker
+
+Hidden/PostProcessing/FinalPass
+
+TextMeshPro/Bitmap Custom Atlas
+
+Smiling face with smiling eyes
+
+Hidden/PostProcessing/CopyStd
+
+LiberationSans SDF - Fallback
+
+Common_Type_Beep+Noise-Low_D
+
+Common_Type_Beep+Noise-Low_B
+
+Common_Type_Beep+Noise-Low_E
+
+Common_Type_Beep+Noise-Low_C
+
+Common_Type_Beep+Noise-Low_A
+
+</i></size></width></margin>
+
+<size=125%><b><align=center>
+
+LiberationSans SDF Material
+
+Hidden/PostProcessing/Uber
+
+TextMeshPro/Distance Field
+
+Hidden/PostProcessing/Copy
+
+<u><#40a0ff><link="ID_01">
+
+<color=#ff40FF><size=125%>
+
+Bokeh Filter (very large)
+
+Hardline_Countdown-Verb_A
+
+TextMeshPro/Mobile/Bitmap
+
+<i><size=75%><margin=10%>
+
+<size=1.17em><b><#FF8040>
+
+Downsample and Prefilter
+
+Common_Rewards_Rarity0-D
+
+Common_Rewards_Rarity1-A
+
+Common_Rewards_Rarity5-A
+
+Common_Rewards_Rarity3-C
+
+Common_Rewards_Rarity4-A
+
+Common_Rewards_Rarity5-C
+
+Common_Rewards_Rarity3-A
+
+Common_Rewards_Rarity2-B
+
+Common_Rewards_Rarity3-D
+
+Common_Rewards_Rarity4-C
+
+Common_Rewards_Rarity4-D
+
+Common_Rewards_Rarity5-E
+
+Common_Rewards_Rarity5-D
+
+Common_Rewards_Rarity5-B
+
+Common_Rewards_Rarity3-B
+
+Common_Rewards_Rarity4-E
+
+Common_Rewards_Rarity2-A
+
+Common_Rewards_Rarity4-B
+
+Common_Rewards_Rarity0-C
+
+Common_Rewards_Rarity2-D
+
+Common_Rewards_Rarity0-E
+
+Face with tears of joy
+
+Bokeh Filter (medium)
+
+Incoming Attack Chain
+
+Bokeh Filter (small)
+
+Bokeh Filter (large)
+
+Autoprocess Run_Amok
+
+PostProcess Profile
+
+Default Style Sheet
+
+</u></color></link>
+
+</size></b></align>
+
+</size></b></color>
+
+Outline UV Speed X
+
+TextMeshPro/Bitmap
+
+Stencil Comparison
+
+TextMeshPro/Sprite
+
+LiberationSans SDF
+
+<color=#80A0FF><b>
+
+digit_no_anim (5)
+
+digit_no_anim (3)
+
+digit_no_anim (1)
+
+digit_no_anim (4)
+
+digit_no_anim (2)
+
+robovac dreamtime
+
+Outline Thickness
+
+Reflection Color
+
+Texture Rotation
+
+Mask Coordinates
+
+in risk we trust
+
+CoC Calculation
+
+Face UV Speed X
+
+Bevel Roundness
+
+0000 port_epoch
+
+WhiteRabbit SDF
+
+Liberation Sans
+
+<color=#ffff40>
+
+</color></size>
+
+Vertex OffsetY
+
+Operator Panic
+
+Specular Color
+
+Font Material
+
+Debug Overlay
+
+Diffuse Power
+
+Edge Softness
+
+Grinning face
+
+Face Texture
+
+Bevel Offset
+
+Bump Outline
+
+Border Color
+
+Scale RatioA
+
+Scale RatioC
+
+Saboteur Spy
+
+White Rabbit
+
+Font Texture
+
+Fill Texture
+
+</color></b>
+
+Main Camera
+
+Face Dilate
+
+Bevel Width
+
+Light Angle
+
+Weight Bold
+
+Gray Sector
+
+digit (10)
+
+digit (11)
+
+digit (12)
+
+Face Color
+
+Slick Gold
+
+vlan party
+
+Text Color
+
+Color Mask
+
+Fill Color
+
+digit (3)
+
+digit (4)
+
+digit (6)
+
+digit (5)
+
+digit (2)
+
+digit (1)
+
+digit (7)
+
+digit (8)
+
+digit (9)
+
+<noninit>
+
+Clip Rect
+
+Black Box
+
+dot (2)
+
+dot (1)
+
+Scale X
+
+Scale Y
+
+
+
+# B 部分覆盖（词典里有片段命中）
+<color=#7AB2F4FF>◥¡¡◣</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>◢◤</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF> </color><color=#7AB2F4FF>◢◤</color><color=#FFFFFFFF> </color>
+<color=#FFFFFFFF> </color><color=#7AB2F4FF>◤</color><color=#FFFFFFFF>  </color>
+<color=#FFFFFFFF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢¡¡◣</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>◢◤</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF> </color><color=#7AB2F4FF>◢◤</color><color=#FFFFFFFF> </color>
+<color=#FFFFFFFF></color><color=#7AB2F4FF>◢¡¡¡</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◣</color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>¡</color>
+<color=#7AB2F4FF>¡</color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>¡</color>
+<color=#7AB2F4FF>◥¡¡¡</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>   </color><color=#7AB2F4FF>¡</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢◤◥◣</color>
+<color=#7AB2F4FF>¡ </color><color=#FFFFFFFF> </color><color=#7AB2F4FF>¡</color>
+<color=#7AB2F4FF>¡</color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>¡</color>
+<color=#7AB2F4FF>◥◣◢◤</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢¡¡◣</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>◢◤</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>◥◣</color>
+<color=#7AB2F4FF>◥¡¡◤</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢◤◥◣</color>
+<color=#7AB2F4FF>◥◣◢¡</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>   </color><color=#7AB2F4FF>¡</color>
+<color=#7AB2F4FF></color><color=#FFFFFFFF>  </color><color=#7AB2F4FF>◢◤</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢¡¡◤</color>
+<color=#7AB2F4FF>◥◣</color><color=#FFFFFFFF>  </color>
+<color=#FFFFFFFF>  </color><color=#7AB2F4FF>◥◣</color>
+<color=#7AB2F4FF>◥¡¡◤</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢¡¡◣</color>
+<color=#7AB2F4FF>¡◣</color><color=#FFFFFFFF>  </color>
+<color=#FFFFFFFF></color><color=#7AB2F4FF>¡◤◥◣</color>
+<color=#7AB2F4FF>◥¡¡◤</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+<color=#7AB2F4FF>◢◤◥◣</color>
+<color=#7AB2F4FF>◥◣◢◤</color>
+<color=#7AB2F4FF>◢◤◥◣</color>
+<color=#7AB2F4FF>◥◣◢◤</color>
+<color=#7AB2F4FF></color>
+    <- 片段: <color=#7AB2F4FF></color>
+
+^Retired users: [^(]*( \(\d+ / \d+\))?$
+    <- 片段: Retired users:
+
+^Your users: [^(]*( \(\d+ / \d+\))?$
+    <- 片段: Your users:
+
