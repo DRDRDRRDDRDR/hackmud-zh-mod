@@ -1,0 +1,18 @@
+{
+  "_note": "第 6 批：来自「真机全量 triage」——把译后仍含英文的行按词频排序后逐条判断，剩下的真漏译。",
+
+  "hackmud runs on monthly donations from players like you":
+    "hackmud 全靠像你这样的玩家每月捐赠维持运转",
+  "hackmud runs on monthly donations from players like you ":
+    "hackmud 全靠像你这样的玩家每月捐赠维持运转 ",
+
+  "joined_corp: false": "已加入公司：否",
+  "joined_corp: true": "已加入公司：是",
+  "is_supporter: false": "是支持者：否",
+  "is_supporter: true": "是支持者：是",
+  "last_login: false": "上次登录：否",
+  "last_login: true": "上次登录：是",
+
+  "joined_corp: null": "已加入公司：无",
+  "is_supporter: null": "是支持者：无"
+}

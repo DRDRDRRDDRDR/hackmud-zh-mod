@@ -1,0 +1,1791 @@
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#FF0000FF>:::信任通信:::</color>               
+<color=#FF0000FF>命令执行超时。请重试。                                    </color>
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>help</color></color>
+<color=#FF0000FF>你必须选择一个用户名，使用                   <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color> 以继续。        </color>
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>user DRRD</color>
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#FF0000FF>:::信任通信:::</color>               
+<color=#FF0000FF>命令执行超时。请重试。                                    </color>
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#FF0000FF>凭据校验失败。723                       </color>
+<color=#FF0000FF>服务器返回:           HTTP/1.1 401 Unauthorized</color>
+<color=#FF0000FF>Steam Auth Failure. Steam might be down. Make sure steam & your OS are 100% up-to-date (might need a restart). VAC banned accounts will also get this message. Contact support@hackmud.com if you can't get it working.</color>
+身份验证致命错误。应用即将关闭。（20 秒）                                                  
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#FF0000FF>服务器返回:           Unable to complete SSL connection
+</color>
+身份验证致命错误。应用即将关闭。（20 秒）                                                  
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#FF0000FF>Credential validation failed. 723</color>
+<color=#FF0000FF>Server returned: HTTP/1.1 401 Unauthorized</color>
+<color=#FF0000FF>Steam Auth Failure. Steam might be down. Make sure steam & your OS are 100% up-to-date (might need a restart). VAC banned accounts will also get this message. Contact support@hackmud.com if you can't get it working.</color>
+Fatal error with authentication. Application shutting down. (20 seconds)
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#FF0000FF>服务器返回:           Unable to complete SSL connection
+</color>
+身份验证致命错误。应用即将关闭。（20 秒）                                                  
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#9B9B9BFF>-身份验证成功-                </color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260807.ÃÁªª}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Á ªª}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.§ ¨Á}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+用法:    <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>help</color></color>
+<color=#FF0000FF>你必须选择一个用户名，使用                   <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color> 以继续。        </color>
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+<color=#FF0000FF>处理你的请求时发生严重错误。                                      325</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>处理你的请求时发生严重错误。                                      992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>处理你的请求时发生严重错误。                                      992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>处理你的请求时发生严重错误。                                      992</color>
+Unable to complete SSL connection
+
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DR</color>
+<color=#FF0000FF>User <color=#9B9B9BFF>dr</color> is unavailable.</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+<color=#FF0000FF>处理你的请求时发生严重错误。                                      992</color>
+Unable to complete SSL connection
+
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#FF0000FF>凭据校验失败。723                       </color>
+<color=#FF0000FF>服务器返回:           HTTP/1.1 401 Unauthorized</color>
+<color=#FF0000FF>Steam Auth Failure. Steam might be down. Make sure steam & your OS are 100% up-to-date (might need a restart). VAC banned accounts will also get this message. Contact support@hackmud.com if you can't get it working.</color>
+身份验证致命错误。应用即将关闭。（20 秒）                                                  
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#9B9B9BFF>-身份验证成功-                </color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Á¡¢¨}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¤Ã ¡}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.  ªª}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+用法:    <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+活动用户已切换至 <color=#9B9B9BFF>               drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+要运行脚本，请输入脚本名称并按回车。
+常用脚本:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [显示可获得的标记] <color=#B3FF9BFF>// 卡住了？试试这个！</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [查看 Trust 提供的所有脚本列表]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [查看你的账户余额]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [向其他用户发送 <color=#CACACAFF></color><color=#9B9B9BFF>GC</color>]
+
+特殊外壳命令:
+  <color=#9B9B9BFF>help</color>           [再次查看此帮助]
+  <color=#9B9B9BFF>user</color>           [切换用户]
+  <color=#9B9B9BFF>create_user</color>    [创建用户]
+  <color=#9B9B9BFF>clear</color>          [清空窗口]
+  <color=#9B9B9BFF>shutdown</color>       [断开终端连接]
+
+                                                                                                                                                                                                                           
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>help</color></color>
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+要运行脚本，请输入脚本名称并按回车。
+常用脚本:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [显示可获得的标记] <color=#B3FF9BFF>// 卡住了？试试这个！</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [查看 Trust 提供的所有脚本列表]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [查看你的账户余额]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [向其他用户发送 <color=#CACACAFF></color><color=#9B9B9BFF>GC</color>]
+
+特殊外壳命令:
+  <color=#9B9B9BFF>help</color>           [再次查看此帮助]
+  <color=#9B9B9BFF>user</color>           [切换用户]
+  <color=#9B9B9BFF>create_user</color>    [创建用户]
+  <color=#9B9B9BFF>clear</color>          [清空窗口]
+  <color=#9B9B9BFF>shutdown</color>       [断开终端连接]
+
+                                                                                                                                                                                                                           
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#9B9B9BFF>-身份验证成功-                </color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¦ ©©}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Á§ª¢}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.§©¦Á}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+用法:    <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+活动用户已切换至 <color=#9B9B9BFF>               drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+要运行脚本，请输入脚本名称并按回车。
+常用脚本:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [显示可获得的标记] <color=#B3FF9BFF>// 卡住了？试试这个！</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [查看 Trust 提供的所有脚本列表]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [查看你的账户余额]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [向其他用户发送 <color=#CACACAFF></color><color=#9B9B9BFF>GC</color>]
+
+特殊外壳命令:
+  <color=#9B9B9BFF>help</color>           [再次查看此帮助]
+  <color=#9B9B9BFF>user</color>           [切换用户]
+  <color=#9B9B9BFF>create_user</color>    [创建用户]
+  <color=#9B9B9BFF>clear</color>          [清空窗口]
+  <color=#9B9B9BFF>shutdown</color>       [断开终端连接]
+
+                                                                                                                                                                                                                           
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+Because I'm - again - such a nice fella, I'm gonna give you some <color=#CACACAFF></color><color=#9B9B9BFF>GC</color>.
+Just so you have something to play with here. Here's <color=#CACACAFF>36</color><color=#9B9B9BFF>GC</color>.
+
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>18</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#000000FF>ma</color>JÁ`k` <color=#FF0000FF>:::</color><color=#B035EEFF>money_manager</color><color=#43314CFF>¨</color>D:::` <color=#000000FF>has been hidden</color>
+
+<color=#9B9B9BFF>view further training with <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+<color=#9B9B9BFF>view completed mark with</color> <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color> { <color=#00FFFFFF>name</color>:<color=#FF00ECFF> "money_manager"</color> }
+
+<color=#1EFF00FF>Received</color> <color=#CACACAFF>36</color><color=#9B9B9BFF>GC</color> 来自 <color=#9B9B9BFF>marks</color>  
+
+<color=#000000FF>mark</color> <color=#FF0000FF>:::</color><color=#B035EEFF>electronic_transfer</color><color=#FF0000FF>:::</color> <color=#000000FF>has been hidden</color>
+
+<color=#9B9B9BFF>view further training with <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+<color=#9B9B9BFF>view completed mark with</color> <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color> { <color=#00FFFFFF>name</color>:<color=#FF00ECFF> "electronic_transfer"</color> }
+
+<color=#9B9B9BFF>-已添加自动补全-            </color>
+
+<color=#9B9B9BFF>-终端关机-</color>
+<color=#9B9B9BFF>             </color>
+<color=#9B9B9BFF>-终端已激活-</color>
+<color=#9B9B9BFF>          </color>
+<color=#9B9B9BFF>-身份验证成功-                </color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.ª¦¦§}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Ã¨§¡}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.§Á©©}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+用法:    <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+活动用户已切换至 <color=#9B9B9BFF>               drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+要运行脚本，请输入脚本名称并按回车。
+常用脚本:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [显示可获得的标记] <color=#B3FF9BFF>// 卡住了？试试这个！</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [查看 Trust 提供的所有脚本列表]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [查看你的账户余额]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [向其他用户发送 <color=#CACACAFF></color><color=#9B9B9BFF>GC</color>]
+
+特殊外壳命令:
+  <color=#9B9B9BFF>help</color>           [再次查看此帮助]
+  <color=#9B9B9BFF>user</color>           [切换用户]
+  <color=#9B9B9BFF>create_user</color>    [创建用户]
+  <color=#9B9B9BFF>clear</color>          [清空窗口]
+  <color=#9B9B9BFF>shutdown</color>       [断开终端连接]
+
+                                                                                                                                                                                                                           
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>9</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#FF0000FF>处理你的请求时发生严重错误。                                      992</color>
+Unable to complete SSL connection
+
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¤ ©¤}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Ã¤Ã¤}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¢ÃÁÁ}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928. ¢ª¦}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¢§ÃÃ}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807. ª¨Ã}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.©¢¦Ã}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¡  ¤}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.Á¢§ }</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Á¤¢Á}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.ªÁÁ¢}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.©§¢ }</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Ã©¦§}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.ÃªÁ¨}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.Á©¡¡}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Ã¦ªÁ}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Á§¦Ã}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.ªÁ¢¨}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¡ÁªÃ}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807. ¤¢©}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¨¡¢ }</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.©§Á©}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¦¤¤¤}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¨¦¡¨}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¨Áª¦}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Áª¢¤}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.Á¡¨¦}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>3</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Ã¡¤¤}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.§Ã§¢}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¡§Ã¡}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DR</color>
+<color=#FF0000FF>User <color=#9B9B9BFF>dr</color> is unavailable.</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>drRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>avaliable</color></color>
+<color=#FF0000FF>:::TRUST COMMUNICATION:::</color> PARSE ERROR <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>avaliable</color>: script doesn't exist
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>37</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.ª§ §}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¨¤¤¤}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¡¢Á©}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>23</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#FF0000FF>Server returned: Unable to complete SSL connection
+</color>
+Fatal error with authentication. Application shutting down. (20 seconds)
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¨¦§Á}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¤¢¦Á}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.Ã ¨©}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>35</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#FF0000FF>Server returned: Unable to complete SSL connection
+</color>
+Fatal error with authentication. Application shutting down. (20 seconds)
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¦ ª¢}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807. ¤¡©}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.ÁÃ§©}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>41</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Áª¤©}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Á¤§©}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.§§§¦}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>38</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#9B9B9BFF>-terminal poweroff-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Á ¢¨}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.Á ¦Ã}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.§Ã¦¢}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>32</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¨§ª¤}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807. ¤¦§}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.ª§ÁÃ}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>27</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¡¦ ¤}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.¤¢ ¤}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¡Ã¦Á}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>1</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¤¢ª¡}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.§§ª©}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¨¨ ©}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#FFFFFFFF>>><color=#9B9B9BFF>user </color>DRRD</color>
+Active user switched to <color=#9B9B9BFF>drrd</color>
+
+Run <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color> to access further teaching from Trust
+
+---
+
+To run a script, type the name of the script and press enter.
+Common scripts:
+  <color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color>    [shows marks that are available to earn] <color=#B3FF9BFF>// Stuck? Try this one!</color>
+  <color=#FF8000FF>scripts</color>.<color=#1EFF00FF>trust</color>      [see a list of all scripts provided by the Trust]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>      [see your acct balance]
+  <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>   [send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to another user]
+
+Special shell commands:
+  <color=#9B9B9BFF>help</color>           [see this again]
+  <color=#9B9B9BFF>user</color>           [change users]
+  <color=#9B9B9BFF>create_user</color>    [create a user]
+  <color=#9B9B9BFF>clear</color>          [clear the window]
+  <color=#9B9B9BFF>shutdown</color>       [disconnect from terminal]
+
+
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color></color>
+When you want to admire how much wealth you've accumulated, hit up <color=#FF8000FF>accts</color>.<color=#1EFF00FF>balance</color>
+Savor the little nugget of freedom I've given you. Because I'm just that nice.
+You'll be able to have it all, when you manage to pull yourself up by your bootstraps and get grinding!
+
+The second most important thing, after making money, is spending it. Cuz you gotta spend money to make money.
+You can send <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> to others using <color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color>; punch in a user <color=#00FFFFFF>to</color> send money to, and an <color=#00FFFFFF>amount</color>.
+
+<color=#FF8000FF>accts</color>.<color=#1EFF00FF>xfer_gc_to</color> { <color=#00FFFFFF>to</color>:<color=#FF00ECFF> "trust"</color>, <color=#00FFFFFF>amount</color>:<color=#FF00ECFF> "<color=#CACACAFF>14</color><color=#9B9B9BFF>GC</color>"</color> }
+
+Try it out by sending some money to <color=#9B9B9BFF>trust</color>. She's got lot of <color=#CACACAFF></color><color=#9B9B9BFF>GC</color> already.
+You'll be sending her a lot more of it later down the line.
+Death and taxes... the only things guaranteed 'round here.
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FFFFFFFF>>><color=#FF8000FF>marks</color>.<color=#1EFF00FF>available</color></color>
+Top level <color=#A4E3FFFF>marks</color> are available to earn now, run <color=#FF8000FF>marks</color>.È<color=#A4E3FFFF>mark_name</color>É to begin a <color=#A4E3FFFF>mark</color>
+To view progress see <color=#FF8000FF>marks</color>.<color=#1EFF00FF>protocol</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>accts</color>
+  |
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  \------ <color=#9B9B9BFF>lost_and_found</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>chats_join</color>
+  |
+  |--------- <color=#9B9B9BFF>chats_tell</color>
+  |
+  \--------- <color=#9B9B9BFF>chats_send</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>context</color>
+  |
+  |------ <color=#9B9B9BFF>scripting</color>
+  |
+  \------ <color=#9B9B9BFF>ez_21</color>
+
+É <color=#FF8000FF>marks</color>.<color=#A4E3FFFF>navigation</color>
+  |
+  \--------- <color=#9B9B9BFF>scratch</color>
+
+É <color=#A4E3FFFF><color=#000000FF>risk</color>.<color=#B035EEFF>reward</color></color>
+
+<color=#FF0000FF>There was a critical error processing your request. 992</color>
+Unable to complete SSL connection
+
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.Ã ÁÁ}</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807.©¢Á }</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807.¦¢¦Á}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)
+
+<color=#9B9B9BFF>-terminal active-</color>
+<color=#9B9B9BFF></color>
+<color=#9B9B9BFF>-authentication success-</color>
+
+  <color=#00FFFFFF>last_login</color>: <color=#9B9B9BFF>{260928.¤©¡ }</color> <color=#B3FF9BFF>// Welcome back to hackmud!</color>
+      <color=#00FFFFFF>joined</color>: <color=#9B9B9BFF>{260807. ¤Áª}</color> <color=#B3FF9BFF>// Wow! You've been playing hackmud for about 2 months!</color>
+ <color=#00FFFFFF>oldest_user</color>: <color=#9B9B9BFF>{260807. Á¢¦}</color> <color=#B3FF9BFF>// about 2 months old</color>
+<color=#00FFFFFF>highest_tier</color>: <color=#9B9B9BFF>0</color>
+ <color=#00FFFFFF>joined_corp</color>: <color=#FF00ECFF>false</color>
+<color=#00FFFFFF>is_supporter</color>: <color=#FF00ECFF>false</color>
+
+<color=#676767FF>╔═Top Donors═━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╖</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#FF8000FF>seanmakesgames</color> <color=#B035EEFF>elliptick</color> <color=#0070DDFF>jab</color> <color=#1EFF00FF>dunce</color> <color=#FFFFFFFF>marto</color> <color=#9B9B9BFF>mr_greed</color>       <color=#676767FF>║</color>
+<color=#676767FF>║</color>                                                         <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#676767FF>hackmud runs on monthly donations from players like you</color> <color=#676767FF>║</color>
+<color=#676767FF>║</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>donate</color> <color=#676767FF>for more information</color>                     <color=#676767FF>║</color>
+<color=#676767FF>╙━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╜</color>
+
+<color=#FFD863FF>==========</color> <color=#FFFFFFFF>WHAT'S NEW</color> <color=#FFD863FF>==========</color>
+
+<color=#676767FF>++</color> <color=#CACACAFF>New Survey Available!</color> <color=#676767FF>--</color> <color=#9B9B9BFF>comcode</color>.<color=#1EFF00FF>survey</color>
+
+Usage: <color=#9B9B9BFF>user</color> <color=#FF00ECFF>ÈusernameÉ</color>
+Your users: <color=#9B9B9BFF>drrd</color> (1 / 2)
+Retired users:  (0 / 5)

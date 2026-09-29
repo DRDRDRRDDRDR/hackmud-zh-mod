@@ -131,14 +131,24 @@ namespace HackmudZh
             }
         }
 
+        /// <summary>诊断用：匹配「英文单词」时**必须先剥掉颜色标签与标签内的十六进制色值**。
+        /// 否则 `&lt;color=#00FFFFFF&gt;是支持者：否&lt;/color&gt;` 里的 `00FFFFFF` 会被
+        /// `[A-Za-z]{3,}` 误判成英文，让清单混进大量**已经译好**的行，干扰判读。</summary>
+        private static readonly System.Text.RegularExpressions.Regex ColorTag =
+            new System.Text.RegularExpressions.Regex(
+                @"</?color(?:=#[0-9A-Fa-f]{6,8})?>|</?[a-z]+(?:=[^>]{0,32})?>",
+                System.Text.RegularExpressions.RegexOptions.Compiled |
+                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+
         /// <summary>把一个「译后仍含英文」的短文本登记进诊断清单（去重、限量）。</summary>
         private static void NoteUntranslated(string s)
         {
             if (string.IsNullOrEmpty(s)) return;
             if (s.Length > 300) s = s.Substring(0, 300);
-            if (!EnWord.IsMatch(s)) return;
+            var plain = ColorTag.Replace(s, "");
+            if (!EnWord.IsMatch(plain)) return;
             // 只登记短文本或含空格的句子，避免把纯标识符刷屏
-            if (!s.Contains(" ") && s.Length < 24) return;
+            if (!plain.Contains(" ") && plain.Length < 24) return;
             if (!_logged.Add(s)) return;
             _loggedCount++;
             if (_loggedCount <= 300)
