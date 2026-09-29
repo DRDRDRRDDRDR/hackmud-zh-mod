@@ -34,6 +34,10 @@ namespace HackmudZh
         private static readonly Dictionary<string, string> WholeMemo =
             new Dictionary<string, string>(StringComparer.Ordinal);
 
+        /// <summary>归一化（空白压平）后的整串索引 —— 对付对齐宽度不同与折行导致的整串不匹配</summary>
+        private static readonly Dictionary<string, string> _normWhole =
+            new Dictionary<string, string>(StringComparer.Ordinal);
+
         internal static int Count { get { return Dict.Count; } }
         internal static string Source = "(未加载)";
 
@@ -91,19 +95,57 @@ namespace HackmudZh
             // 短语表**只收含空格或标点的条目**。
             // 理由：裸单词（from / amount / confirm / time …）若参与子串替换，
             // 会误伤无关文本（例如 transform 里的 "from"）。裸单词只走整串精确匹配。
+            //
+            // key 一并做**空白归一化**：连续空白压成一个空格。
+            // 因为客户端会用与源码不同的对齐宽度重排（见下方 ReplacePhrasesNormalized 的说明），
+            // 不归一化的话 "help           [see this again]" 永远对不上。
             _phrases = new List<KeyValuePair<string, string>>();
+            var seen = new HashSet<string>(StringComparer.Ordinal);
             foreach (var kv in Dict)
             {
                 if (!IsPhraseSafe(kv.Key)) continue;
-                _phrases.Add(kv);
+                var nk = Normalize(kv.Key);
+                if (nk.Length < 3 || !seen.Add(nk)) continue;
+                _phrases.Add(new KeyValuePair<string, string>(nk, kv.Value));
             }
             _phrases.Sort((a, b) => b.Key.Length.CompareTo(a.Key.Length));
             LineMemo.Clear();
             WholeMemo.Clear();
 
+            // 归一化整串索引：整条词条的空白压平后建索引，
+            // 这样「源码对齐宽度」与「屏幕对齐宽度」不同时仍能整串命中。
+            _normWhole.Clear();
+            foreach (var kv in Dict)
+            {
+                var nk = Normalize(kv.Key);
+                if (nk.Length >= 3 && !_normWhole.ContainsKey(nk)) _normWhole[nk] = kv.Value;
+            }
+
             ZhPlugin.Log.LogInfo(string.Format(
-                "词典 {0} 条（其中 {1} 条可参与短语替换，其余仅整串匹配）",
-                Dict.Count, _phrases.Count));
+                "词典 {0} 条（其中 {1} 条可参与短语替换，{2} 条走归一化整串匹配）",
+                Dict.Count, _phrases.Count, _normWhole.Count));
+        }
+
+        /// <summary>空白归一化：连续空白（含 \n \t）压成一个空格，并 trim 两端。</summary>
+        internal static string Normalize(string s)
+        {
+            if (string.IsNullOrEmpty(s)) return s;
+            var sb = new StringBuilder(s.Length);
+            bool ws = false, started = false;
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                if (c == ' ' || c == '\t' || c == '\n' || c == '\r' || c == '\f' || c == '\v')
+                {
+                    ws = true;
+                    continue;
+                }
+                if (ws && started) sb.Append(' ');
+                ws = false;
+                started = true;
+                sb.Append(c);
+            }
+            return sb.ToString();
         }
 
         /// <summary>含空格或标点的条目才允许参与子串替换。</summary>
@@ -170,13 +212,18 @@ namespace HackmudZh
 
             string exact;
             string outp;
+            string nexact;
             if (Dict.TryGetValue(line, out exact))
             {
                 outp = exact;
             }
+            else if (_normWhole.TryGetValue(Normalize(line), out nexact))
+            {
+                outp = nexact;
+            }
             else
             {
-                outp = ReplacePhrasesTagAware(line);
+                outp = ReplacePhrasesNormalized(line);
             }
 
             // 缓存上限，防止长会话无限增长
@@ -186,22 +233,32 @@ namespace HackmudZh
         }
 
         /// <summary>
-        /// 标签感知的短语替换。
+        /// 归一化感知的短语替换 —— 同时解决三个问题。
         ///
-        /// 为什么需要：客户端的语法高亮会把脚本名/用户名包进 &lt;color=...&gt;，
-        /// 于是 `Top level marks are available…` 在屏幕上变成
-        /// `Top level &lt;color=…&gt;marks&lt;/color&gt; are available…`，
-        /// 整串与词典 key 对不上。这里先在**去掉标签的视图**上做匹配，
-        /// 再把命中的区间映射回原文（含标签），因此**颜色标签完整保留**。
+        /// 1) **颜色标签**：客户端语法高亮把脚本名/用户名包进 &lt;color=…&gt;，
+        ///    于是 `Top level marks are available…` 在屏幕上变成
+        ///    `Top level &lt;color=…&gt;marks&lt;/color&gt; are available…`，整串对不上。
+        /// 2) **对齐宽度不同**：客户端会用与源码不同的对齐宽度重排，
+        ///    例如源码里 `help` 后跟 13 个空格，屏幕上只有 11 个。
+        /// 3) **终端折行**：AddOutput 调 MEGNKIOGEBH(line, char_width) 按宽度折行，
+        ///    超过一行宽度的长句在屏幕上被断成两行（中间是 \n）。
+        ///
+        /// 做法：构造一个「跳过标签、连续空白压成一个空格」的归一化视图，
+        /// 同时记录每个归一化字符对应的**原文区间**；在归一化视图上匹配，
+        /// 命中后把原文区间整体替换掉。因此标签与空白的差异都不再影响匹配。
         /// </summary>
-        private static string ReplacePhrasesTagAware(string line)
+        private static string ReplacePhrasesNormalized(string line)
         {
-            var plain = new StringBuilder(line.Length);
-            var map = new List<int>(line.Length);   // plain 下标 -> 原文下标
+            int n = line.Length;
+            var norm = new StringBuilder(n);
+            var mapStart = new List<int>(n);   // 归一化下标 -> 原文起始
+            var mapEnd = new List<int>(n);     // 归一化下标 -> 原文结束（不含）
+
             int i = 0;
-            while (i < line.Length)
+            while (i < n)
             {
-                if (line[i] == '<')
+                char c = line[i];
+                if (c == '<')
                 {
                     int close = line.IndexOf('>', i);
                     if (close > i && close - i <= 42 && IsRichTag(line, i, close))
@@ -210,18 +267,28 @@ namespace HackmudZh
                         continue;
                     }
                 }
-                plain.Append(line[i]);
-                map.Add(i);
+                if (c == ' ' || c == '\t' || c == '\n' || c == '\r')
+                {
+                    int j = i;
+                    while (j < n && (line[j] == ' ' || line[j] == '\t' || line[j] == '\n' || line[j] == '\r')) j++;
+                    norm.Append(' ');
+                    mapStart.Add(i);
+                    mapEnd.Add(j);
+                    i = j;
+                    continue;
+                }
+                norm.Append(c);
+                mapStart.Add(i);
+                mapEnd.Add(i + 1);
                 i++;
             }
 
-            string p = plain.ToString();
+            string p = norm.ToString();
             var sb = new StringBuilder(line.Length + 32);
-            int src = 0;       // 原文游标
-            int k = 0;         // plain 游标
+            int src = 0, k = 0;
             while (k < p.Length)
             {
-                int bestLen = 0, bestIdx = -1;
+                int hitIdx = -1;
                 for (int q = 0; q < _phrases.Count; q++)
                 {
                     var key = _phrases[q].Key;
@@ -229,29 +296,31 @@ namespace HackmudZh
                     if (p[k] != key[0]) continue;
                     if (string.CompareOrdinal(p, k, key, 0, key.Length) != 0) continue;
                     if (!BoundaryOk(p, k, key)) continue;
-                    bestLen = key.Length; bestIdx = q;
-                    break;      // _phrases 已按长度降序
+                    hitIdx = q;
+                    break;              // _phrases 已按长度降序
                 }
-                if (bestIdx < 0)
+
+                if (hitIdx < 0)
                 {
-                    // 未命中：原样输出原文这一段（含其中的标签）
-                    int nextOrig = (k < map.Count) ? map[k] : line.Length;
-                    sb.Append(line, src, nextOrig - src);
-                    src = nextOrig;
-                    if (k < map.Count) { sb.Append(line[src]); src++; }
+                    // 未命中：把原文这一段（含其中的标签/空白）原样输出
+                    int s0 = mapStart[k], e0 = mapEnd[k];
+                    if (s0 > src) sb.Append(line, src, s0 - src);
+                    sb.Append(line, s0, e0 - s0);
+                    src = e0;
                     k++;
                 }
                 else
                 {
-                    int startOrig = map[k];
-                    int endPlain = k + bestLen - 1;
-                    int endOrig = (endPlain + 1 < map.Count) ? map[endPlain + 1] : line.Length;
-                    sb.Append(_phrases[bestIdx].Value);
-                    src = endOrig;
-                    k += bestLen;
+                    int keyLen = _phrases[hitIdx].Key.Length;
+                    int s0 = mapStart[k];
+                    int e0 = mapEnd[k + keyLen - 1];
+                    if (s0 > src) sb.Append(line, src, s0 - src);
+                    sb.Append(_phrases[hitIdx].Value);
+                    src = e0;
+                    k += keyLen;
                 }
             }
-            sb.Append(line, src, line.Length - src);
+            if (src < line.Length) sb.Append(line, src, line.Length - src);
             return sb.ToString();
         }
 

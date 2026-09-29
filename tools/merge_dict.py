@@ -20,15 +20,18 @@ ROOT = r"C:\Users\DR\Downloads\DSH\hackmud-zh-mod\dict"
 MAIN = os.path.join(ROOT, "zh.json")
 SUPS = [os.path.join(ROOT, "zh_supplement.json"),
         os.path.join(ROOT, "zh_supplement2.json"),
-        os.path.join(ROOT, "zh_supplement3.json")]
+        os.path.join(ROOT, "zh_supplement3.json"),
+        os.path.join(ROOT, "zh_supplement4.json")]
 REPORT = os.path.join(ROOT, "merge_report.txt")
 
 PH = re.compile(r"\{[0-9]\}")
 
 # 会被客户端**语法高亮**成独立 token 的东西：
 #   `X  颜色/样式码（`C `V `M …）
+#   `   单独的反引号 = 上一个颜色码的**结束符**（必须也算 token，
+#       否则切开后会残留一个反引号，导致片段永远匹配不上屏幕文本）
 #   marks.available  之类的脚本名（含点号）
-TOKENIZE = re.compile(r"(`[A-Za-z]|[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)+)")
+TOKENIZE = re.compile(r"(`[A-Za-z]|`|[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)+)")
 
 
 def split_segments(s):
@@ -59,6 +62,62 @@ def plain_fragments(key, val):
         if len(a.strip()) >= 8 and a != b:
             out.append((a, b))
     return out
+
+
+# 终端宽度（来自游戏自身的 -TERMINAL WIDTH: 108-）
+TERM_WIDTH = 108
+SENT_SPLIT = re.compile(r"(?<=[.!?])\s+")
+
+
+def sentence_fragments(key, val):
+    """按**句子**拆开长词条。
+
+    终端会按宽度折行（Core.dll 的 AddOutput 里调 MEGNKIOGEBH(line, char_width)），
+    所以超长整句在屏幕上是被断成两行的，整句 key 永远匹配不到。
+    拆成句子后，只要断点落在句末就能命中。
+    """
+    ks = SENT_SPLIT.split(key)
+    vs = SENT_SPLIT.split(val)
+    if len(ks) != len(vs) or len(ks) < 2:
+        return []
+    out = []
+    for a, b in zip(ks, vs):
+        a = a.strip()
+        b = b.strip()
+        if len(a) >= 12 and a != b:
+            out.append((a, b))
+    return out
+
+
+def _wrap(s, width):
+    """按空格做词级折行，模拟终端的换行方式。"""
+    words = s.split(" ")
+    lines, cur = [], ""
+    for w in words:
+        if cur == "":
+            cur = w
+        elif len(cur) + 1 + len(w) <= width:
+            cur += " " + w
+        else:
+            lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
+    return "\n".join(lines)
+
+
+def wrap_variants(key, val):
+    """为超长词条注册**按终端宽度预折行**的变体。
+
+    断点落在句子中间时，句子级拆分也救不了 —— 只有把「折行后的样子」
+    本身作为 key 注册，才能命中屏幕上真实显示的两行文本。
+    """
+    if len(key) <= TERM_WIDTH:
+        return []
+    w = _wrap(key, TERM_WIDTH)
+    if w == key or "\n" not in w:
+        return []
+    return [(w, val)]
 
 
 def fragments(key, val):
@@ -132,16 +191,26 @@ def main():
     # ---- 先把主词典自身的多行词条展开成一行的 ----
     line_exp = []
     for k in list(main_d.keys()):
-        for a, b in expand_lines(k, main_d[k]):
+        v = main_d[k]
+        for a, b in expand_lines(k, v):
             if a not in main_d:
                 main_d[a] = b
                 line_exp.append((a, b))
         # 行内被高亮 token 拆开的，也把纯文本段救回来
-        for a, b in plain_fragments(k, main_d[k]):
+        for a, b in plain_fragments(k, v):
             if a not in main_d:
                 main_d[a] = b
                 line_exp.append((a, b))
-    print("主词典多行展开 + 行内片段: %d 条" % len(line_exp))
+        # 超长整句：按句子拆 + 按终端宽度预折行
+        for a, b in sentence_fragments(k, v):
+            if a not in main_d:
+                main_d[a] = b
+                line_exp.append((a, b))
+        for a, b in wrap_variants(k, v):
+            if a not in main_d:
+                main_d[a] = b
+                line_exp.append((a, b))
+    print("主词典展开/片段/折行变体: %d 条" % len(line_exp))
 
     added, kept, frags = added_all, kept_all, frags_all
 

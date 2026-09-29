@@ -1,0 +1,21 @@
+v2.0.2: 归一化匹配 + 修三个「译文在词典里却不生效」的根因；词典 908 -> 1281
+
+三个根因:
+1) 客户端用不同的对齐宽度重排 (源码 13 空格 -> 屏幕 11 空格)，带对齐空白的 key 永远对不上
+   -> 引擎在"归一化空白"视图上匹配 + 新增"归一化整串"索引
+2) 客户端按宽度折行 (AddOutput 调 MEGNKIOGEBH(line, char_width)，终端 108 列)，
+   超长句被断成两行 -> 把 \n 也当空白归一化 + 为超长词条生成预折行变体
+3) 颜色码 `C 开色、单独 ` 收色；tokenizer 漏了收尾那个反引号，
+   切出的片段带多余反引号 ('help`  [see this again]')，所以永远匹配不上屏幕文本
+   -> 单独反引号也算 token
+
+引擎改动 (src/HackmudZh/Translator.cs):
+- ReplacePhrasesTagAware -> ReplacePhrasesNormalized: 构造"跳过标签 + 连续空白压成一个空格"
+  的归一化视图并记录每个字符的原文区间，在归一化视图上匹配后替换原文区间
+  => 颜色标签与空白差异都不再影响匹配
+- 新增 Normalize() 与 _normWhole 索引；Rebuild() 里短语表 key 一并归一化
+
+词典: 新增 zh_supplement4.json；merge_dict.py 新增 sentence_fragments() 与 wrap_variants()，
+TOKENIZE 补上单独反引号
+
+验收门: zhcheck 新增 --show 模式（逐行打印输入->输出），定点验证不再靠反推

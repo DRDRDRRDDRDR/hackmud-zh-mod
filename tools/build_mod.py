@@ -28,7 +28,7 @@ BEP = os.path.join(VENDOR, "BepInEx_win_x64_5.4.23.5")
 SRC_DLL = os.path.join(ROOT, "src", "HackmudZh", "bin", "Release", "HackmudZh.dll")
 DICT = os.path.join(ROOT, "dict", "zh.json")
 OUT = os.path.join(ROOT, "dist", "hackmud-zh-mod")
-VER = "2.0.1"
+VER = "2.0.2"
 
 # 绝不能出现在包里的游戏程序集
 GAME_ASSEMBLIES = ["Core.dll", "UnityEngine.dll", "UnityEngine.CoreModule.dll",

@@ -31,6 +31,28 @@ class Program
         Console.WriteLine("词典: " + dict + "  (" + Translator.Count + " 条)");
         Console.WriteLine();
 
+        // --show 模式：逐行打印「输入 -> 输出」，用于定点验证
+        bool show = args.Any(a => a == "--show");
+        if (show)
+        {
+            var src = corpus != null && File.Exists(corpus) ? corpus : null;
+            if (src == null) { Console.WriteLine("--show 需要指定语料文件"); return 2; }
+            foreach (var raw in File.ReadAllLines(src, Encoding.UTF8))
+            {
+                if (raw.Trim().Length == 0) continue;
+                var tr = Translator.Translate(raw);
+                var didTr = tr != raw;
+                Console.WriteLine("[" + (didTr ? "译" : "原") + "] " + raw);
+                if (didTr)
+                {
+                    var plain = TagRe.Replace(tr, "");
+                    Console.WriteLine("     -> " + plain.Trim());
+                }
+                Console.WriteLine();
+            }
+            return 0;
+        }
+
         // 语料：默认收集 shell.txt 的全部行
         var lines = new List<string>();
         if (corpus != null && File.Exists(corpus))

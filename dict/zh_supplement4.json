@@ -1,0 +1,27 @@
+{
+  "Top level marks are available to earn now, run marks.Èmark_nameÉ to begin a mark":
+    "顶层标记现在都可以获取了，运行 marks.Èmark_nameÉ 即可开始一个标记",
+
+  "name: \"Èmark_nameÉ\" - Search for mark by name":
+    "name: \"Èmark_nameÉ\" - 按名称搜索标记",
+  " - Search for mark by name": " - 按名称搜索标记",
+  "pos: [x,y] - View mark at specified coordinates":
+    "pos: [x,y] - 查看指定坐标处的标记",
+  " - View mark at specified coordinates": " - 查看指定坐标处的标记",
+
+  "Will you be able to trust 3 alpha H!T forever?":
+    "你能永远信任 3 alpha H!T 吗？",
+  "Will you be able to trust ": "你能信任 ",
+  " forever?": " 直到永远吗？",
+
+  "even if not a vac,   you are at least friend of _2_11_45_36! maybe even worthy of truth!":
+    "就算不是 vac，你也至少是 _2_11_45_36 的朋友！也许甚至够格知道真相！",
+  "even if not a vac,": "就算不是 vac，",
+  "you are at least friend of ": "你也至少是 ",
+  "! maybe even worthy of truth!": " 的朋友！也许甚至够格知道真相！",
+
+  "mark :::running_in_the_pool::: has been hidden": "标记 :::running_in_the_pool::: 已被隐藏",
+  "mark :::complex_input::: has been hidden": "标记 :::complex_input::: 已被隐藏",
+  " been hidden": " 已被隐藏",
+  ": has been hidden": ": 已被隐藏"
+}
