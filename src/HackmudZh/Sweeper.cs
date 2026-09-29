@@ -131,24 +131,41 @@ namespace HackmudZh
             }
         }
 
-        /// <summary>诊断用：匹配「英文单词」时**必须先剥掉颜色标签与标签内的十六进制色值**。
-        /// 否则 `&lt;color=#00FFFFFF&gt;是支持者：否&lt;/color&gt;` 里的 `00FFFFFF` 会被
-        /// `[A-Za-z]{3,}` 误判成英文，让清单混进大量**已经译好**的行，干扰判读。</summary>
-        private static readonly System.Text.RegularExpressions.Regex ColorTag =
-            new System.Text.RegularExpressions.Regex(
-                @"</?color(?:=#[0-9A-Fa-f]{6,8})?>|</?[a-z]+(?:=[^>]{0,32})?>",
-                System.Text.RegularExpressions.RegexOptions.Compiled |
-                System.Text.RegularExpressions.RegexOptions.IgnoreCase);
+        /// <summary>判断文本里是否还有「连续 3 个 ASCII 字母」，**跳过所有 &lt;...&gt; 区段**。
+        ///
+        /// 为什么不用正则：最初用 `</?color(?:=#[0-9A-Fa-f]{6,8})?>` 剥标签，
+        /// 单独在 .NET 里测完全正确，但编进插件后**行为不符** ——
+        /// `&lt;color=#00FFFFFF&gt;已加入公司：否&lt;/color&gt;` 仍被当成含英文而记进未译清单
+        /// （色值 `00FFFFFF` 被 `[A-Za-z]{3,}` 匹配）。逐字符扫描没有这个问题，
+        /// 行为完全确定，也顺带省掉一个正则。
+        ///
+        /// 注意 `&lt;mark_name&gt;` 这类占位符也会被跳过 —— 那是**想要**的：
+        /// 它是玩家要输入的内容，不该算作「未译的英文」。</summary>
+        private static bool HasEnglishWord(string s)
+        {
+            bool inTag = false;
+            int run = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                char c = s[i];
+                if (c == '<') { inTag = true; run = 0; continue; }
+                if (c == '>') { inTag = false; run = 0; continue; }
+                if (inTag) continue;
+                if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
+                {
+                    if (++run >= 3) return true;
+                }
+                else run = 0;
+            }
+            return false;
+        }
 
         /// <summary>把一个「译后仍含英文」的短文本登记进诊断清单（去重、限量）。</summary>
         private static void NoteUntranslated(string s)
         {
             if (string.IsNullOrEmpty(s)) return;
             if (s.Length > 300) s = s.Substring(0, 300);
-            var plain = ColorTag.Replace(s, "");
-            if (!EnWord.IsMatch(plain)) return;
-            // 只登记短文本或含空格的句子，避免把纯标识符刷屏
-            if (!plain.Contains(" ") && plain.Length < 24) return;
+            if (!HasEnglishWord(s)) return;
             if (!_logged.Add(s)) return;
             _loggedCount++;
             if (_loggedCount <= 300)
