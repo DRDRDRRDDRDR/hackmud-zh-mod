@@ -24,7 +24,19 @@ SUPS = [os.path.join(ROOT, "zh_supplement.json"),
         os.path.join(ROOT, "zh_supplement4.json"),
         os.path.join(ROOT, "zh_supplement5.json"),
         os.path.join(ROOT, "zh_supplement6.json"),
-        os.path.join(ROOT, "zh_supplement7.json")]
+        os.path.join(ROOT, "zh_supplement7.json"),
+        os.path.join(ROOT, "zh_supplement8.json"),
+        os.path.join(ROOT, "zh_supplement9.json"),
+        os.path.join(ROOT, "zh_supplement10.json"),
+        os.path.join(ROOT, "zh_supplement11.json"),
+        os.path.join(ROOT, "zh_supplement12.json"),
+        os.path.join(ROOT, "zh_supplement13.json"),
+        os.path.join(ROOT, "zh_supplement14.json"),
+        os.path.join(ROOT, "zh_supplement15.json"),
+        os.path.join(ROOT, "zh_supplement16.json")]
+
+# 覆盖型补充：强制覆盖主词典同键（用于修复空译文/内容丢失等既有错误）
+OVERRIDES = [os.path.join(ROOT, "zh_override.json")]
 REPORT = os.path.join(ROOT, "merge_report.txt")
 
 PH = re.compile(r"\{[0-9]\}")
@@ -154,6 +166,24 @@ def expand_lines(key, val):
 def main():
     main_d = json.load(open(MAIN, encoding="utf-8"))
     print("主词典 %d 条" % len(main_d))
+
+    # ---- 覆盖型补充：修复既有条目的错误（如空译文、内容丢失）----
+    # 普通补充「已有键不覆盖」是为了保持术语一致；但修复类改动必须能落地，
+    # 否则从零重跑会把修复回退掉。故单列 OVERRIDES，优先级最高。
+    over_all = []
+    for ov_path in OVERRIDES:
+        if not os.path.exists(ov_path):
+            print("  跳过（不存在）:", os.path.basename(ov_path)); continue
+        ov_d = json.load(open(ov_path, encoding="utf-8"))
+        n = 0
+        for k, v in ov_d.items():
+            if not k or not v or k.startswith("_"):
+                continue
+            if main_d.get(k) != v:
+                main_d[k] = v
+                over_all.append((k, v))
+                n += 1
+        print("  覆盖 %s: %d 条（实际改动 %d）" % (os.path.basename(ov_path), len(ov_d), n))
 
     added_all = []
     frags_all = []

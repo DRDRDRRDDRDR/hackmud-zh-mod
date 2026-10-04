@@ -1,4 +1,4 @@
-﻿# -*- coding: utf-8 -*-
+# -*- coding: utf-8 -*-
 """build_mod.py — 组装 hackmud 简体中文模组发布包。
 
 产物结构（全部是**新增文件**，不覆盖任何游戏既有文件）：
@@ -33,7 +33,7 @@ VER = "2.0.9"
 # 绝不能出现在包里的游戏程序集
 GAME_ASSEMBLIES = ["Core.dll", "UnityEngine.dll", "UnityEngine.CoreModule.dll",
                    "UnityEngine.UI.dll", "Unity.TextMeshPro.dll",
-                   "UnityEngine.TextRenderingModule.dll", "Assembly-CSharp-firstpass.dll"]
+                   "UnityEngine.TextRenderingModule.dll", "Assembly-CSharp-firstpass.dll", "Assembly-CSharp.dll"]
 
 
 def sha256(p):
@@ -93,18 +93,23 @@ def main():
         problems.append("缺少 wordmap.json")
 
     # ---- 脚本 ----
-    for s in ("install.ps1", "uninstall.ps1", "verify.ps1", "README.md", "NOTICE.md"):
+    for s in ("install.ps1", "uninstall.ps1", "verify.ps1", "safety.ps1", "README.md", "NOTICE.md"):
         p = os.path.join(ROOT, "release", s)
         if os.path.exists(p):
             shutil.copy2(p, os.path.join(OUT, s))
         else:
             problems.append("缺少脚本: " + s)
 
+    if problems:
+        for problem in problems:
+            print("!! " + problem)
+        return 1
+
     # ---- 硬校验 1: 不得混入游戏程序集 ----
     leaked = []
     for r, dirs, files in os.walk(OUT):
         for fn in files:
-            if fn in GAME_ASSEMBLIES:
+            if fn.casefold() in {name.casefold() for name in GAME_ASSEMBLIES}:
                 leaked.append(os.path.join(r, fn))
     if leaked:
         print("!! 包内混入游戏程序集:")
@@ -122,9 +127,15 @@ def main():
     zh = os.path.join(plug, "zh.json")
     with open(zh, encoding="utf-8") as f:
         d2 = json.load(f)
+    with open(zh, "rb") as f:
+        packed_bytes = f.read()
+    with open(DICT, "rb") as f:
+        source_bytes = f.read()
+    if packed_bytes != source_bytes:
+        print("!! 包内词典与源字节不一致"); return 1
     if len(d2) != len(d):
-        print("!! 包内词典与源不一致"); return 1
-    print("校验 3 通过: 包内词典 %d 条可解析" % len(d2))
+        print("!! 包内词典条数不一致"); return 1
+    print("校验 3 通过: 包内词典字节和解析结果均一致")
 
     # ---- 硬校验 4: 原版游戏文件未被改动（对比安装前备份） ----
     #     此校验在真机 install 后由 verify.ps1 做；这里只确认包内不含游戏文件

@@ -1,0 +1,11 @@
+{
+  "_comment": "hackmud-zh-mod 第十二批补译：Core.dll 剩余固定文案片段（前缀式，动态值/命令标识符保留）。",
+  "Hi. If you are reading this message, you have decompiled the client and are reading the source code.": "你好。如果你在读这条消息，说明你反编译了客户端，正在阅读源代码。",
+  "We think that it's awesome you've become so interested in the game that you want to pull it apart and see how it ticks. Encouraging curiosity like this is a major part of the mission of hackmud. Unfortunately, at this time, the client source is 'closed source' and client modifications and custom clients are not permitted. Right now, you are outside of the 'sandbox' that governs the bounds of the game world and mechanics.": "我们觉得，你能对这款游戏如此感兴趣，以至于想把它拆开看看它是怎么运转的，这真的很棒。鼓励这样的好奇心正是 hackmud 使命的重要组成部分。但遗憾的是，目前客户端源码是「闭源」的，不允许客户端修改和自定义客户端。此刻，你已身处管理游戏世界与机制边界的「沙盒」之外。",
+  "People in violation of the sandbox boundaries may be banned.": "违反沙盒边界的人可能会被封禁。",
+  "If you are interested in the piece of data that accompanies this message, what you are doing is very likely in violation of the sandbox boundaries.": "如果你对这条消息附带的数据感兴趣，那么你正在做的事情很可能违反了沙盒边界。",
+  "hackmud is operated by the non-profit organization ComCODE (comcode.org). If you think this game is great, the community is great and you want to help speed up development so we can get to supporting stuff like client modification and custom clients faster, consider becoming a supporter! https://comcode.org/#donate": "hackmud 由非营利组织 ComCODE（comcode.org）运营。如果你觉得这游戏很棒、社区很棒，并且想帮助加快开发进度，让我们能更快地支持客户端修改和自定义客户端等功能，可以考虑成为支持者！https://comcode.org/#donate",
+  "In the meantime, if you have questions about the sandbox boundaries, send us an email: sandbox@hackmud.com or join our discord and open up a sandbox ticket: https://discord.gg/hackmud": "在此期间，如果你对沙盒边界有疑问，请给我们发邮件：sandbox@hackmud.com，或加入我们的 Discord 并创建沙盒工单：https://discord.gg/hackmud",
+  "We appreciate your understanding, care and support for our small game studio and non profit organization.": "感谢你对我们这个小工作室和非营利组织的理解、关心与支持。",
+  "Thanks!": "谢谢！"
+}

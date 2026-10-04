@@ -1,0 +1,18 @@
+{
+  "_comment": "hackmud-zh-mod 第十三批补译：wiki 脚本文档 CLI 输出中的游戏内固定文案（动态值/命令标识符保留）。",
+  "Get a range with count:<count> and start:<offset>": "使用 count:<计数> 和 start:<偏移> 获取一段范围",
+  "To filter recipients, add to:\"<username>\"": "要筛选收款人，请添加 to:\"<用户名>\"",
+  "To filter senders, add from:\"<username>\"": "要筛选付款人，请添加 from:\"<用户名>\"",
+  "To filter by script, add script:\"<scriptname>\"": "要按脚本筛选，请添加 script:\"<脚本名>\"",
+  "To filter list, add user:\"<username>\" or run_id:\"run_id\"": "要筛选列表，请添加 user:\"<用户名>\" 或 run_id:\"运行ID\"",
+  "To see more items, add count:<\"all\" or number>, start:<number>": "要查看更多条目，请添加 count:<\"all\" 或数字>, start:<数字>",
+  "Transferred ": "已转移 ",
+  " to trust : this is a memo": " 给 trust：这是一条备注",
+  "quiet list has been cleared": "静默列表已清空",
+  "invalid token. specify valid token with i:\"<token>\"": "无效令牌。请用 i:\"<令牌>\" 指定有效令牌",
+  "Your `Qprotocol` has been fast-forwarded to the end of Trust's required `Qmarks`.": "你的 `Q协议` 已快进到 Trust 必需 `Q标记` 的末尾。",
+  "Use escrow.charge to sell scripts. Place the following into your script:": "使用 escrow.charge 出售脚本。请将以下内容放入你的脚本：",
+  "Mark :::not_yet_obtained_required_mark::: earned - view further training with marks.available": "标记 :::not_yet_obtained_required_mark::: 已获得——查看 marks.available 获取更多训练",
+  "current users: ": "当前用户： ",
+  "Lock rotation. Breach state reset.": "锁轮换。入侵状态已重置。"
+}

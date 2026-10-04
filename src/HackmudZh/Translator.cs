@@ -490,20 +490,22 @@ namespace HackmudZh
         {
             int s0 = mapStart[vStart];
             int e0 = mapEnd[vStart + vLen - 1];
+            int visibleStart = vStart;
+            int visibleEnd = vStart + vLen - 1;
 
-            // 左边界：原文前一个字符
-            if (s0 > 0)
+            // Rich-text 标签不构成可见词边界；仅当片段本身以词字符开头/结尾时检查两侧。
+            // 以空格或标点开头/结尾的片段不应因相邻高亮 token 被拒绝。
+            if (visibleStart > 0 && IsWordChar(orig[mapStart[visibleStart]]))
             {
-                char b = orig[s0 - 1];
-                if (b != '\n' && b != '\r' && IsWordChar(b)) return false;
+                char b = orig[mapStart[visibleStart - 1]];
+                if (b != '\n' && b != '\r' && (IsWordChar(b) || b == '.' || b == '_')) return false;
             }
-            // 右边界：原文后一个字符
-            if (e0 < orig.Length)
+            if (visibleEnd + 1 < mapStart.Count && IsWordChar(orig[mapStart[visibleEnd]]))
             {
-                char a = orig[e0];
-                if (a == '\n' || a == '\r') return true;   // 换行 = 天然边界
+                char a = orig[mapStart[visibleEnd + 1]];
+                if (a == '\n' || a == '\r') return true;
                 if (IsWordChar(a)) return false;
-                if (a == '.' || a == '_') return false;    // 标识符/命令名的一部分
+                if (a == '.' || a == '_') return false;
             }
             return true;
         }

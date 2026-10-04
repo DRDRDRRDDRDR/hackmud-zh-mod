@@ -36,6 +36,12 @@ namespace HackmudZh
         private static readonly System.Text.RegularExpressions.Regex EnWord =
             new System.Text.RegularExpressions.Regex("[A-Za-z]{3,}",
                 System.Text.RegularExpressions.RegexOptions.Compiled);
+        private static readonly System.Text.RegularExpressions.Regex Identifier =
+            new System.Text.RegularExpressions.Regex("\\b[A-Za-z_][A-Za-z0-9_]*(?:\\.[A-Za-z_][A-Za-z0-9_]*)+\\b",
+                System.Text.RegularExpressions.RegexOptions.Compiled);
+        private static readonly System.Text.RegularExpressions.Regex BareIdentifier =
+            new System.Text.RegularExpressions.Regex("^[A-Za-z_][A-Za-z0-9_]*$",
+                System.Text.RegularExpressions.RegexOptions.Compiled);
 
         /// <summary>由插件在 Awake 里调用（不能叫 Start：会与 Unity 的 Start 消息重名）</summary>
         internal static void Begin()
@@ -82,7 +88,7 @@ namespace HackmudZh
                     try
                     {
                         var cur = t.text;
-                        if (string.IsNullOrEmpty(cur)) continue;
+                        if (string.IsNullOrEmpty(cur) || !Patches.ShouldTranslate(t, cur)) continue;
                         var tr = Translator.Translate(cur);
                         if (!ReferenceEquals(tr, cur) && tr != cur)
                         {
@@ -110,7 +116,7 @@ namespace HackmudZh
                     try
                     {
                         var cur = t.text;
-                        if (string.IsNullOrEmpty(cur)) continue;
+                        if (string.IsNullOrEmpty(cur) || !Patches.ShouldTranslate(t, cur)) continue;
                         var tr = Translator.Translate(cur);
                         if (!ReferenceEquals(tr, cur) && tr != cur)
                         {
@@ -163,9 +169,21 @@ namespace HackmudZh
         /// <summary>把一个「译后仍含英文」的短文本登记进诊断清单（去重、限量）。</summary>
         private static void NoteUntranslated(string s)
         {
-            if (string.IsNullOrEmpty(s)) return;
+            if (string.IsNullOrWhiteSpace(s)) return;
             if (s.Length > 300) s = s.Substring(0, 300);
             if (!HasEnglishWord(s)) return;
+
+            // 命令、脚本名、标识符和玩家输入必须保持原样，不应进入漏译清单。
+            string plain = System.Text.RegularExpressions.Regex.Replace(s, "<[^>]*>", "");
+            string compact = System.Text.RegularExpressions.Regex.Replace(plain, "\\s+", " ").Trim();
+            if (Identifier.IsMatch(compact) &&
+                System.Text.RegularExpressions.Regex.Replace(compact, "[A-Za-z0-9_ .:{}\\\";,=\\-]", "").Length == 0)
+                return;
+            if (BareIdentifier.IsMatch(compact)) return;
+            if (compact.StartsWith("scripts.", System.StringComparison.Ordinal) ||
+                compact.StartsWith("comcode.", System.StringComparison.Ordinal) ||
+                compact.StartsWith(":", System.StringComparison.Ordinal)) return;
+
             if (!_logged.Add(s)) return;
             _loggedCount++;
             if (_loggedCount <= 300)

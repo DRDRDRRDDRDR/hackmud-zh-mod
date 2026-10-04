@@ -5,6 +5,29 @@ src/**/bin/
 src/**/obj/
 tools/**/bin/
 tools/**/obj/
+__pycache__/
+*.pyc
+
+# release/ 下只保留脚本与文档；BepInEx 载体与打包产物不入库
+release/BepInEx/
+release/winhttp.dll
+release/doorstop_config.ini
+release/.doorstop_version
+release/SHA256SUMS.txt
+
+# 调查与提取中间产物（可复现生成，不入库）
+work/
+dict/localization_inventory.json
+dict/localization_inventory.md
+dict/namespaces_candidates.json
+dict/namespaces_report.md
+dict/candidate_core_utf8.txt
+dict/wordmap.json.bak-*
+
+# 临时脚本
+.tmp_*.py
+zhcheck-whole.log
+
 dict/gaps.txt
 dict/zhcheck_out.txt
 dict/*_report.txt
@@ -28,16 +51,9 @@ dict/test_tl.txt
 dict/live*.txt
 dict/corpus_all.txt
 dict/all_out.txt
-dict/corpus_whole.txt
-dict/whole_out.txt
-dict/test_*.txt
 dict/ta.txt
 dict/tb.txt
 dict/tc.txt
-dict/show*.txt
-dict/coverage.txt
-dict/missing.txt
 dict/bare_words.txt
-dict/test_tl.txt
 dict/test_adm*.txt
 dict/test_wrap*.txt

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
@@ -8,6 +8,7 @@ using BepInEx.Logging;
 using HarmonyLib;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HackmudZh
 {
@@ -89,16 +90,27 @@ namespace HackmudZh
 
     internal static class Patches
     {
-        /// <summary>TMP_Text.text = value 的 prefix：把 value 换成译文再交给原方法。</summary>
-        internal static void TmpTextPrefix(ref string value)
+        private static bool Protected(Component component, string value)
         {
-            value = Translator.Translate(value);
+            if (component == null || string.IsNullOrEmpty(value)) return true;
+            if (component.GetComponentInParent<InputField>() != null) return true;
+            if (component.GetComponentInParent<TMPro.TMP_InputField>() != null) return true;
+            return false;
         }
 
-        /// <summary>UI.Text.text = value 的 prefix。</summary>
-        internal static void UiTextPrefix(ref string value)
+        internal static void TmpTextPrefix(TMP_Text __instance, ref string value)
         {
-            value = Translator.Translate(value);
+            if (!Protected(__instance, value)) value = Translator.Translate(value);
+        }
+
+        internal static void UiTextPrefix(Text __instance, ref string value)
+        {
+            if (!Protected(__instance, value)) value = Translator.Translate(value);
+        }
+
+        internal static bool ShouldTranslate(Component component, string value)
+        {
+            return !Protected(component, value);
         }
     }
 }

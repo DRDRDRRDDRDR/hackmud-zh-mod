@@ -13,7 +13,7 @@ using HackmudZh;
 /// 跑一遍翻译，报告：
 ///   1. 仍含英文单词的行（按出现次数排序）—— 这是可执行的缺口清单
 ///   2. 词典命中率
-/// 退出码 0 = 所有行都已无英文残留（或仅有允许清单内的）
+/// 退出码 0 = 检查通过；退出码 1 = 整段回归或颜色标签平衡失败；退出码 2 = 参数或语料文件缺失
 /// </summary>
 class Program
 {
@@ -21,6 +21,14 @@ class Program
     static readonly Regex WordRe = new Regex(@"[A-Za-z]{3,}", RegexOptions.Compiled);
     static readonly Regex TagRe = new Regex(@"</?color(?:=#[0-9A-Fa-f]{8})?>", RegexOptions.Compiled);
     static readonly Regex EscRe = new Regex(@"[\u00C0-\u00FF]{2,}", RegexOptions.Compiled);
+    static readonly Regex OpenColorRe = new Regex(@"<color(?:=#[0-9A-Fa-f]{8})?>", RegexOptions.Compiled);
+    static readonly Regex CloseColorRe = new Regex(@"</color>", RegexOptions.Compiled);
+    static readonly Regex HanRe = new Regex(@"[\u4e00-\u9fff]", RegexOptions.Compiled);
+
+    static int Count(Regex re, string text)
+    {
+        return re.Matches(text).Count;
+    }
 
     static int Main(string[] args)
     {
@@ -45,6 +53,25 @@ class Program
                 // 逐行读会漏掉「跨行才匹配得到」的 key，测不出跨折行效果。
                 var all = File.ReadAllText(src, Encoding.UTF8);
                 var tr = Translator.Translate(all);
+                int inHan = Count(HanRe, all);
+                int outHan = Count(HanRe, tr);
+                int inOpen = Count(OpenColorRe, all);
+                int inClose = Count(CloseColorRe, all);
+                int outOpen = Count(OpenColorRe, tr);
+                int outClose = Count(CloseColorRe, tr);
+                bool balancedDelta = inOpen - inClose == outOpen - outClose;
+                Console.WriteLine("整段回归: 汉字 {0} -> {1} (差值 {2})", inHan, outHan, outHan - inHan);
+                Console.WriteLine("颜色标签差值: 输入 {0}，输出 {1}", inOpen - inClose, outOpen - outClose);
+                if (outHan < inHan)
+                {
+                    Console.Error.WriteLine("FAIL: 输出汉字数回退");
+                    return 1;
+                }
+                if (!balancedDelta)
+                {
+                    Console.Error.WriteLine("FAIL: 输出颜色标签差值改变");
+                    return 1;
+                }
                 Console.WriteLine("=== 整段输入 ===");
                 Console.WriteLine(all);
                 Console.WriteLine("=== 整段输出 ===");

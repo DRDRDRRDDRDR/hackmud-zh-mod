@@ -1,0 +1,19 @@
+{
+  "_note": "第 8 批：运行时颜色标签/动态字段导致整句键失效的固定前后缀补译。命令名、用户名和计数保持原样。",
+  "Run ": "运行 ",
+  " to access further teaching from Trust": " 以获取 Trust 的后续教学",
+  "Top level ": "顶层 ",
+  " are available to earn now, run ": "现在都可以获取了，运行 ",
+  " to begin a ": " 即可开始一个",
+  "To view progress see ": "查看进度请用 ",
+  "Your users: ": "你的用户： ",
+  "Retired users: ": "已注销用户： ",
+  "Usage: ": "用法： ",
+  "New Survey Available!": "有新调查可做！",
+  "Connection established to ": "已连接到 ",
+  "Unable to complete SSL connection": "无法完成 SSL 连接",
+  "There was a critical error processing your request.": "处理你的请求时发生严重错误。",
+  "Operator Panic": "操作员紧急故障",
+  "What should i do ?": "我该怎么办？",
+  "Good luck!": "祝你好运！"
+}

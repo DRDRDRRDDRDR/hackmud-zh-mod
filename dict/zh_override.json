@@ -1,0 +1,17 @@
+{
+ " called from {0}": " 调用自 {0}",
+ "done.</color>": "完成。",
+ "done.</color><color=#7AB2F4FF>                    </color>": "完成。<color=#7AB2F4FF>                    </color>",
+ "done.</color><color=#7AB2F4FF>                 </color>": "完成。<color=#7AB2F4FF>                 </color>",
+ "done.</color><color=#7AB2F4FF>                 </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>locking in failsafes...": "完成。<color=#7AB2F4FF>               </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>激活硬连线... 完成。",
+ "done.</color><color=#7AB2F4FF>                </color>": "完成。<color=#7AB2F4FF>                </color>",
+ "done.</color><color=#7AB2F4FF>                </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>activating one-time-keys...": "完成。<color=#7AB2F4FF>                 </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>锁定失效保护... 完成。",
+ "done.</color><color=#7AB2F4FF>               </color>": "完成。<color=#7AB2F4FF>               </color>",
+ "done.</color><color=#7AB2F4FF>               </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>activating hardline...": "完成。<color=#7AB2F4FF>                 </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>处理子系统... 完成。",
+ "done.</color><color=#7AB2F4FF>            </color>": "完成。<color=#7AB2F4FF>            </color>",
+ "done.</color><color=#7AB2F4FF>            </color>\n<color=#7AB2F4FF>                                             </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>spinning up primary drives...": "完成。<color=#7AB2F4FF>                </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>激活一次性密钥... 完成。",
+ "done.</color><color=#7AB2F4FF>           </color>": "完成。<color=#7AB2F4FF>           </color>",
+ "done.</color><color=#7AB2F4FF>          </color>": "完成。<color=#7AB2F4FF>          </color>",
+ "done.</color><color=#7AB2F4FF>          </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>secondary drives...": "完成。<color=#7AB2F4FF>            </color>\n<color=#7AB2F4FF>                                             </color>\n<color=#7AB2F4FF></color><color=#FFFFFFFF>启动主驱动器... 完成。",
+ "done.</color><color=#7AB2F4FF>   </color>": "完成。<color=#7AB2F4FF>   </color>"
+}
